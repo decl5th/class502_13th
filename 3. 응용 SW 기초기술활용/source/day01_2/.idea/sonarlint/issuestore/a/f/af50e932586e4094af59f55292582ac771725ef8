@@ -1,0 +1,6 @@
+
+•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ñç“ÉJ$6e045e26-4f0f-4809-82b6-aca4d63af318
+~
+java:S1854	"6Remove this useless assignment to local variable "i3".(Ô‚ê¢ûÿÿÿÿ8ôÕÚ†í1J$0563aa61-be7e-463c-aa08-e647f6ff5233
+o
+java:S1481	"'Remove this unused "i3" local variable.(Ô‚ê¢ûÿÿÿÿ8õÕÚ†í1J$069e2a54-35b4-499c-b739-c0e7310949f5
