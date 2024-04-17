@@ -1,0 +1,29 @@
+<!doctype html>
+<html> 
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <style> 
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+            html {
+                font-size: 13px; /* 1rem - 13px */
+            }
+
+            .font1 {
+                font-size: 2rem; /* 26px */
+                font-family: "Noto Sans KR", sans-serif;
+            }  /* <p> 글꼴을 바꾸기 위한 가장 상위태그는 html이다 */
+            .font2 {
+                font-size: 30px; /* 이제 1em의 기준은 30px이 된다*/
+            }
+            .font2 SPAN {
+                font-size: 2em; /* 60px */
+            }
+        </style>
+        <p class="font1">가나다</p> 
+        <p class="font2">
+            <span>라마바</span>
+        </p>
+    </body>
+</html>

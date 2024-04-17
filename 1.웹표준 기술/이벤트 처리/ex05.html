@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            const person = {
+                name: "john",
+                age: 40,
+                showInfo() {
+                    console.log(this);
+                },
+                handleEvent() { // person
+                    console.log("handleEvent", this);
+                }
+            };
+
+            window.addEventListener("DOMContentLoaded", function(){
+                
+                function handleClick() {
+                    console.log(this);
+                }
+
+                handleClick = handleClick.bind(person); // 화살표 함수는 못바꿈
+
+                const buttonEl = document.getElementById("button");
+                // buttonEl.addEventListener("click", handleClick);
+                /*
+                buttonEl.addEventListener("click", function() {
+                    person.showInfo2();
+                });
+                */
+               buttonEl.addEventListener("click", person); // person.handleEvent 자동호출 
+            });
+        </script>
+        <button type="button" id="button">클릭!</button>
+
+    </body>
+</html>

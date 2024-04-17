@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <h1 style="color:orange;">회원가입</h1> <!--제목 설정-->
+        <form name="frm" method="post" action="ex02.html" autocomplete="off"> <!--항상 form 태그안에 양식을 기입 -->
+            <input type="hidden" name="mode" value="join">
+            <fieldset>
+                <legend>일반 정보</legend>
+            <dl>
+                <dt>아이디</dt> <!--항목명--> <!--style을 배우지 않아 아이디 옆에 배너 뜨지 않았음-->
+                <dd> <!--내용-->
+                    <input type="text" name="userId" required placeholder="아이디" minlength="6"> <!--한 줄의 텍스트를 받는다 왜? 아디 쓰는데 한 줄이면 충분하니까-->
+                </dd>
+            </dl>
+            <dl>
+                <dt>비밀번호</dt>
+                <dd>
+                    <input type="password" name="userPw" required placeholder="비밀번호" minlength="8">
+                </dd>
+            </dl>
+            <dl>
+                <dt>비밀번호 확인</dt>
+                <dd>
+                    <input type="password" name="confirmPw" required placeholder="비밀번호 확인">
+                </dd>
+            </dl>
+            <dl>
+                <dt>이름</dt>
+                <dd>
+                    <input type="text" name="userNm" value="사용자01" disabled>
+                </dd>
+            </dl>
+            <dl>
+                <dt>이메일</dt>
+                <dd>
+                    <input type="text" name="userEm">
+                </dd>
+            </dl>
+            <dl>
+                <dt>생년월일</dt>
+                <dd>
+                    <input type="date" name="birthDt">
+                </dd>
+            </dl>
+            <dl>
+                <dt>프로필 이미지</dt>
+                <dd>
+                    <input type="file" name="profile" multiple>
+                </dd>
+            </dl>
+            <dl>
+                <dt>자기소개</dt>
+                <dd>
+                    <textarea name="introduction" rows="10" cols="30"></textarea>
+                </dd>
+            </dl>
+            </fieldset>
+            <fieldset>
+                <legend>학력 정보</legend>
+                <dl>
+                    <dt>전공</dt>
+                    <dd>
+                        <select name="major">
+                            <optgroup label="공과대학">
+                                <option value="컴공과">컴퓨터공학과</option>
+                                <option value="기계공학과">기계공학과</option>
+                            </optgroup>
+
+                            <optgroup label="인문대학">
+                                <option value="영어영문학과" selected>영어영문학과</option>
+                                <option value="철학과">철학과</option>
+                            </optgroup>
+                        </select>
+                    </dd>
+                </dl>
+            
+                <dl>
+                <dt>지역</dt>
+                    <dd>
+                        <datalist id="location">
+                            <option value="서울특별시" label="서울"></option>
+                            <option value="경기도" label="경기"></option>
+                            <option value="인천광역시" label="인천"></option>
+                        </datalist>
+                        <input type="text" name="location" list="datalist 아이디값">
+                    </dd>
+                </dl>
+            </fieldset>
+            <fieldset>
+                <legend>취미 정보</legend>
+                
+            <dl>
+                <dt>취미</dt>
+                <dd>
+                    <label>
+                    <input type="checkbox" name="hobby" value="취미1" checked>사진
+                    </label>
+                    <label>
+                    <input type="checkbox" name="hobby" value="취미2">영화감상
+                    </label>
+                    <label>
+                    <input type="checkbox" name="hobby" value="취미3">축구
+                    </label>
+                </dd>
+            </dl>
+            </fieldset>
+            <fieldset>
+                <legend>성별 정보</legend>
+            <dl>
+                <dt>Gender</dt>
+                <dd>
+                    
+                    <input type="radio" name="gender" id="gender1" value="1">
+                    <label for="gender1">Male</label>
+                    
+                    <input type="radio" name="gender" id="gender2" value="2">
+                    <label for="gender2">Female</label>
+                </dd>
+            </dl>
+            </fieldset>
+            <!--
+            <input type="reset" value="다시입력">
+            <input type="submit" value="가입하기">
+            -->
+            <button type="reset">다시입력</button>
+            <button type="submit">가입하기</button>
+        </form>
+
+        <progress max="100" value="70"></progress>
+    </body>
+</html>

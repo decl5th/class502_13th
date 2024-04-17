@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="js/todo3.js"></script>
+        
+        
+    </head>
+    <body>
+        
+        <form name="frmRegist" autocomplete="off">
+            <input type="text" name="subject"> <!--frmRegist의 이름값(속성명)subject-->
+            <button type="submit">등록</button>
+            
+        </form>
+
+        <ul class="items">
+            
+        </ul>
+        <script type="text/html" id="tpl">  <!-- 치환해서 쓰기 위한 전제구문-->
+            <li data-id="#id"> <!--치환 코드-->
+                #subject
+                <button type="button">삭제</button>
+            </li> 
+        </script>
+
+    </body>
+</html>

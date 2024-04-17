@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <style>
+            .bg {
+                border-bottom: 1px solid #000;
+                height: 500px;
+                background-image: url('images/logo.png'); /* url 함수 */
+                /* background-repeat: repeat-x; */
+                /* background-repeat: repeat-y; */
+                background-repeat: no-repeat;
+                /* background-position: 400px 200px; 400px만큼 좌에서 우로 이동 200px 만큼 위에서 아래로 이동 */
+                background-position: center center;
+            }
+            
+            .bg2 {
+                border: 1px solid #000;
+                width: 700px;
+                height: 350px;
+                background-image: url('images/bg.png'); /* 상대 경로를 통해 이미지를 불러옴 */
+                background-repeat: no-repeat;
+                /* background-size: contain; */
+                /* background-size: cover; */
+                /* background-size: 300px */
+                background-size: 70%;
+            }
+
+            .bg3 {
+                border: 3px solid #000;
+                height: 500px;
+                padding: 100px;
+                background-image: url('images/bg.png');
+                background-repeat: no-repeat;
+                background-size: contain ;
+                background-origin: content-box;
+            }
+        </style>
+        <div class="bg"></div>
+        <div class="bg2"></div>
+        <div class="bg3"></div>
+
+    </body>
+</html>

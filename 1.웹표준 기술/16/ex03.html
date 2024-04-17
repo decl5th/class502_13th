@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <style>
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            border: 1px solid #000;
+            height: 100px;
+        }
+
+        ul li:nth-of-type(3n+1) {
+            background-color: lightsalmon;
+        }
+        ul li:nth-of-type(3n+2) {
+            background-color: greenyellow;
+        }
+        ul li:nth-of-type(3n) {
+            background-color: rgb(153, 211, 250);
+        }
+
+        .flex1 { 
+            display: flex;
+        }
+
+        .flex1 li {
+            width: 0;
+        }
+
+        .flex1 li:nth-of-type(1) {
+            flex-grow: 1; /* 전체 중 3분의 1만큼 비율 할당 */
+        }
+
+        .flex1 li:nth-of-type(2) {
+            flex-grow: 1; /* 전체 중 3분의 1만큼 비율 할당 */
+        }
+
+        .flex1 li:nth-of-type(3) {
+            flex-grow: 1;
+        }
+    </style>
+    <ul class="flex1">
+        <li>menu1</li>
+        <li>menu2menu2menu2menu2menu2menu2menu2menu2</li>
+        <li>menu3</li>
+    </ul>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+객체가 객체를 만듬
+
+객체를 만들수 있는 생성자가 생성자 함수
+
+function (함수) 정의 - > 함수 내용 정의  - > 생성자 함수 객체 
+
+const p1 = new Person(); - > new를 통해서 새로운 메모리, 새로운 객체를 생성; 프로토타입 연결(=상속); 자원 접근 가능해짐
+
+위와 같은 과정이 생성되는 것이 밑과 같다
+
+const p1 = {};
+
+p1.__proto__ = Person.prototype; // Person의 프로토타입 상속 
+
+this 초기화(Person this값을 할당) 작업 진행
+
+초기화 작업 내부적으로는 풀어서 얘길 하자면
+
+prototype 안에 있는 constructor 속성이 초기화를 진행 
+
+- > 초기화 진행 구문 - > Person.prototype.constructor.call(p1); === Person.call(p1)
+
+Person.call(p1); // 생성된 객체를 넣어줬다. - > p1 this 값을 Person에 대입 
+
+이 때 실행되면서 EC 과정을 거쳐 
+
+Person () 안 this의 값이 p1로 초기화
+

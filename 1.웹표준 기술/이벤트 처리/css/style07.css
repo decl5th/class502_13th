@@ -1,0 +1,10 @@
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: orange;
+}
+
+.box.on { /*.box클래스에 .on클래스 포함의 의미*/
+    width: 300px;
+    height: 300px;
+} 

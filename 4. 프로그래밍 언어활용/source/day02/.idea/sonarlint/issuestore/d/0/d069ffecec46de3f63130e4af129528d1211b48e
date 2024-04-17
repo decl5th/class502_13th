@@ -1,0 +1,7 @@
+
+“
+java:S1104"PMake numA a static final constant or non-public and provide accessors if needed.(í¢¸µ8ë¿ñ«î1J$e322a6c5-881c-4836-8ce0-afc1bfe83b5b
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¶Á÷œ8í¿ñ«î1J$cec20131-cf4d-46fc-9907-fd4c782d958a
+
+java:S1450"URemove the "numAAA" field and declare it as a local variable in the relevant methods.(Ú¢İ¡øÿÿÿÿ8î¿ñ«î1J$598d6d08-9f78-4d56-a032-794f89fe472e
+l	java:S106"+Replace this use of System.out by a logger.(‚Œ­K8ğ¿ñ«î1J$f91501c2-c287-4c48-8351-0472d4041135

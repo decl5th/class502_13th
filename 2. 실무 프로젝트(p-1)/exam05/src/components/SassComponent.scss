@@ -1,0 +1,49 @@
+@import './utils.scss'; // 따로 빼논 스타일용 함수 연결 
+
+.SassComponent { 
+    display: flex; // 좌에서 우로 시작
+
+    .box {
+        &.red { // 내부에서 현재 선택자 스스로 선택 == .box.red 
+            background: $red;
+            @include square(1); // 함수로 정의가 가능하다
+        }
+
+        &.orange {
+            background: $ornage;
+            @include square(2); // 2배로 넓이 높이가 넓어짐
+        }
+
+        &.yellow {
+            background: $yellow;
+            @include square(3);
+        }
+
+        &.green {
+            background: $green;
+            @include square(4);
+        }
+
+        &.blue {
+            background: $blue;
+            @include square(5);
+        }
+
+        &.indigo {
+            background: $indigo;
+            @include square(6);
+        }
+
+        &.violet{
+            background: $violet;
+            @include square(7); 
+        }
+
+
+        &:hover {
+            background: #000;
+        }
+    }
+
+   
+}

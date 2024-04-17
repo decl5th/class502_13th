@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        
+        <script>    
+            window.addEventListener("DOMContentLoaded", function(){
+
+                const textEl = document.getElementById("text");
+                textEl.addEventListener("keyup", function(e) {
+                    console.log(e);
+                    console.log("keyup", this.value);
+                });
+            });
+
+        </script>
+
+        <input type="text" id="text">
+
+    </body>
+</html>

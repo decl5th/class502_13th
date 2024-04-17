@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bed3a33d-e9ca-47e2-852b-51eacec1912b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../3. 응용 SW 기초기술활용/source/day02/src/exam01/Ex01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3. 응용 SW 기초기술활용/source/day02/src/exam01/Ex02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3. 응용 SW 기초기술활용/source/day02/src/exam01/Ex03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3. 응용 SW 기초기술활용/source/day02/src/exam01/Ex04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3. 응용 SW 기초기술활용/source/day02/src/exam01/Ex05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3. 응용 SW 기초기술활용/source/day02/src/exam01/Ex06.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3. 응용 SW 기초기술활용/source/day02/src/exam01/Ex07.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3. 응용 SW 기초기술활용/source/day02/src/exam02/Ex01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3. 응용 SW 기초기술활용/source/day02/src/exam02/Ex02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3. 응용 SW 기초기술활용/source/day02/src/exam02/Ex03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3. 응용 SW 기초기술활용/source/day02/src/exam02/Ex04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3. 응용 SW 기초기술활용/source/day02/src/exam02/Ex05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3. 응용 SW 기초기술활용/source/day02/src/exam02/Ex06.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3. 응용 SW 기초기술활용/source/day02/src/exam02/Ex07.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3. 응용 SW 기초기술활용/source/day02/src/practice01/Pr01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3. 응용 SW 기초기술활용/source/day02/src/practice01/pr02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3. 응용 SW 기초기술활용/source/day02/src/practice01/pr03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3. 응용 SW 기초기술활용/source/day02/src/practice01/pr04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3. 응용 SW 기초기술활용/source/day02/src/practice01/pr05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day01_Object/src/exam01/Ex01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day01_Object/src/exam01/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day02/src/exam01/Ex01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day02/src/exam01/Ex02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day02/src/exam01/Ex03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day02/src/exam01/Ex04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day02/src/exam01/Ex05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day02/src/exam01/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day02/src/exam02/A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day02/src/exam02/B.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day02/src/exam02/Ex01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day02/src/exam02/Ex02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day02/src/exam02/Schedule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day02/src/exam02/Schedule2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day02/src/exam03/Ex01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day02/src/outsidepackage/B.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day02/src/outsidepackage/Ex01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day02/src/samepackage/A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day02/src/samepackage/Ex01.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "decl5th"
+  }
+}]]></component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/decl5th/class502_13th.git",
+    "accountId": "0a386df4-edb3-4402-9851-390a1b3ffdbe"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2fCjeJD08A4HiL36751GYdtHFe9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/이민혁/4. 프로그래밍 언어활용/source"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bed3a33d-e9ca-47e2-852b-51eacec1912b" name="Changes" comment="" />
+      <created>1713312047721</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713312047721</updated>
+    </task>
+    <servers />
+  </component>
+</project>

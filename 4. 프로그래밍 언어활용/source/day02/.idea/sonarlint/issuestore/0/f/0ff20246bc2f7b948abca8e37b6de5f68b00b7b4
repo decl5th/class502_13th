@@ -1,0 +1,9 @@
+
+¦
+java:S1488"^Immediately return this expression instead of assigning it to the temporary variable "result".(”õ‚—ýÿÿÿÿ8éæ±¢î1J$859159d2-654b-4ab2-9d3a-64e3d0b135a8
+•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ñç“ÉJ$299a5058-9bd5-4341-9987-566a5d74f47b
+}
+java:S1854"5Remove this useless assignment to local variable "r".(Õ¦èÉþÿÿÿÿ8ÐÊŠ£î1J$0dea5802-0dd3-488f-ad97-4056c49c481b
+n
+java:S1481"&Remove this unused "r" local variable.(Õ¦èÉþÿÿÿÿ8ÒÊŠ£î1J$6738e697-530e-40f4-9f13-34a4e40d46b7
+ƒ	java:S125"<This block of commented-out lines of code should be removed.(ÚçÆ¡ÿÿÿÿÿ8ÓÊŠ£î1J$69334b42-735c-44ed-a54e-57fea16c4f8b
