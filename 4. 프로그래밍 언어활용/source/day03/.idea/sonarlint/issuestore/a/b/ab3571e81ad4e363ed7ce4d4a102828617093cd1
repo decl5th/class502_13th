@@ -1,15 +1,15 @@
 
 –
-java:S1104"NMake id a static final constant or non-public and provide accessors if needed.(Ğ—¸şÿÿÿÿ8›°ÂÏî1J$269fd388-9610-4d1d-a27b-fe1a29dc3960
+java:S1104"NMake id a static final constant or non-public and provide accessors if needed.(Ğ—¸şÿÿÿÿ8›°ÂÏî1J$59715267-1b85-48cd-8733-a8e1916b86ab
 p
-java:S1444"(Make this "public static id" field final(Ğ—¸şÿÿÿÿ8›°ÂÏî1J$af536307-f39d-47a0-a61c-e48557cd40d3
-œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¶Á÷œ8œ°ÂÏî1J$9dd9bec5-9d23-4674-8646-f751bf42dd6c
+java:S1444"(Make this "public static id" field final(Ğ—¸şÿÿÿÿ8›°ÂÏî1J$93e67920-f77f-42da-82a2-803e7814c49f
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¶Á÷œ8œ°ÂÏî1J$8253fc42-61c7-4a15-8842-f1777a87d31f
 _
-java:S1116	"Remove this empty statement.(ïÇ“‰8Ì«Ğî1J$5260a395-539e-432f-b451-3c0612b9bd23
+java:S1116	"Remove this empty statement.(ïÇ“‰8Ì«Ğî1J$2e83e953-121b-4cd7-9486-8ef50b2c10d8
 g
-java:S3010"Remove this assignment of "id".(£©èÚşÿÿÿÿ8£°ÂÏî1J$7d9ea123-14fb-4d7f-9335-e8a08acab43c
+java:S3010"Remove this assignment of "id".(£©èÚşÿÿÿÿ8£°ÂÏî1J$c6675312-c1b2-4d8c-83ed-becc78c1724d
 }
-java:S2209"5Change this instance-reference to a static reference.(£©èÚşÿÿÿÿ8¤°ÂÏî1J$86b1495d-230b-4c9d-a9e0-2c6bb01f9f4d
-m	java:S106"+Replace this use of System.out by a logger.(ö€•€8¥°ÂÏî1J$dd1a90e0-1b0c-4fac-833b-b48d63c72862
-r	java:S106"+Replace this use of System.out by a logger.(Ì†Üïøÿÿÿÿ8¦°ÂÏî1J$57212037-c5e5-414f-8d1b-9c47b22d6843
-r	java:S106"+Replace this use of System.out by a logger.(‘±ùÿÿÿÿ8¦°ÂÏî1J$27efa4d9-9cc0-42cd-a41a-3e8cd570eb67
+java:S2209"5Change this instance-reference to a static reference.(£©èÚşÿÿÿÿ8¤°ÂÏî1J$b6ec54b8-b5ae-438f-9dac-9ee10c05de94
+m	java:S106"+Replace this use of System.out by a logger.(ö€•€8¥°ÂÏî1J$e7e7b11c-c0ba-46e7-9281-e44e46079e04
+r	java:S106"+Replace this use of System.out by a logger.(Ì†Üïøÿÿÿÿ8¦°ÂÏî1J$85526a15-e14e-4dd9-a27f-66b45a216720
+r	java:S106"+Replace this use of System.out by a logger.(‘±ùÿÿÿÿ8¦°ÂÏî1J$8c38daea-ae1a-4077-a709-a8e4bf501fe8

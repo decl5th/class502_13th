@@ -1,6 +1,4 @@
 
-=
-src/Main.java,9\2\924f089edb4af5ee45c8a9d1129cd28e2b368138
 H
 src/exam01/Schedule.java,0\e\0e35e4bf67b0ca20b6e7b90daa92257f3d721c79
 D
