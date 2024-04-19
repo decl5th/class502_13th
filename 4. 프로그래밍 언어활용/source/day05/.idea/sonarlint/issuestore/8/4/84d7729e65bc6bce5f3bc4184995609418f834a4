@@ -1,0 +1,13 @@
+
+•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ñç“ÉJ$12d588d1-eae9-4783-ad18-2a83c34ac59e
+}
+java:S1854
+"5Remove this useless assignment to local variable "c".(˜°ƒüÿÿÿÿ8£Ã  ï1J$b27654e7-f0a8-4453-855c-25bcc050b5be
+„
+java:S6201	"<Replace this instanceof check and cast with 'instanceof C c'(‡•×úÿÿÿÿ8¯Ã  ï1J$d4251b32-9bff-4ea4-a493-aad92b040e49
+n
+java:S1481
+"&Remove this unused "c" local variable.(˜°ƒüÿÿÿÿ8°Ã  ï1J$fba59e06-66af-4de7-8a8d-c483b973bdad
+…
+java:S6201"=Replace this instanceof check and cast with 'instanceof C cc'(Ñø³şÿÿÿÿ8‡×« ï1J$58e72ee5-a4bb-4286-bd14-bf0346154477
+m	java:S106"+Replace this use of System.out by a logger.(“¦—Ê8ˆ×« ï1J$0c69a2f5-0bce-4027-aabd-4f99639f8f1e
