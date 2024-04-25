@@ -1,0 +1,12 @@
+
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‹»Éúÿÿÿÿ8û–Çğ1J$1533b8b2-009a-466e-8d92-fd0494b05ec7
+r	java:S106"+Replace this use of System.out by a logger.(ÊËşÿÿÿÿ8„—Çğ1J$d163b207-4b9a-4e56-ad3b-779e05d017bb
+r	java:S106"+Replace this use of System.out by a logger.(‰¤ä›ıÿÿÿÿ8…—Çğ1J$37b45481-381b-4ce8-99ac-4f987e911572
+p	java:S108")Either remove or fill this block of code.(‹¦ˆ”ùÿÿÿÿ8†—Çğ1J$18949637-9c66-4834-9570-fa34cab0315b
+m	java:S106"+Replace this use of System.out by a logger.(’ºİ±8†—Çğ1J$e9327e37-c3ea-45c9-9ba5-31d0218ea1c3
+r
+java:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8‡—Çğ1J$3c1bdbe7-3087-4bd7-a48c-627c7d13aaed
+z
+java:S1128"7Remove this unused import 'javax.imageio.IIOException'.(´ÂÏ’8«‰æÇğ1J$c8ae2d9f-f5f3-4bf7-825c-3cfe0dd0287c
+‚
+java:S1128":Remove this unused import 'java.io.FileNotFoundException'.(·î™ùÿÿÿÿ8‡—Çğ1J$6b8657ab-2049-47f2-95f0-3ffc6986e4fd

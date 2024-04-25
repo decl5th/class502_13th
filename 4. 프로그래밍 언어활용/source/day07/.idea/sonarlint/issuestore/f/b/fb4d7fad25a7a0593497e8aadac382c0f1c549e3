@@ -1,0 +1,12 @@
+
+^
+java:S4973"<Strings and Boxed types should be compared using "equals()".(¢Çıšùÿÿÿÿ8œ¢âÏğ1
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(œ‰½Úùÿÿÿÿ8ñİÏğ1J$7e0ebc5c-50b1-40c0-81c3-d9799799febd
+c
+java:S2129" Remove this "String" constructor(¢¡³”8úİÏğ1J$264423e8-0344-42b8-a64e-744e1869763d
+r	java:S106
+"+Replace this use of System.out by a logger.(µ¿©Ôûÿÿÿÿ8ûİÏğ1J$5ef6d24e-70c4-4131-b07d-94bee67a7f75
+m	java:S106"+Replace this use of System.out by a logger.(µÿ£´8ûİÏğ1J$8a3a84ee-1090-4fb2-838f-9ffa81a400b8
+m	java:S106"+Replace this use of System.out by a logger.(—“¦Ü8ûİÏğ1J$375c8541-a3e7-46d0-b2c4-be3f2ad3c69b
+r	java:S106"+Replace this use of System.out by a logger.(ò’áˆûÿÿÿÿ8ûİÏğ1J$1cbfe429-1a9d-4d46-b5ae-adc0882213bb
+X	java:S125"<This block of commented-out lines of code should be removed.(²—Éš8¦¢âÏğ1

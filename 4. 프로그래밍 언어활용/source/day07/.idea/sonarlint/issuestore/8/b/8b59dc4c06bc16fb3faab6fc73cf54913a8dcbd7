@@ -1,0 +1,13 @@
+
+k
+java:S1604"(Make this anonymous inner class a lambda(íúâë8¿óÄÃğ1J$7e028810-f925-4c41-a4ba-efeee6ce7274
+•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ñç“ÉJ$e5f0cf42-949f-4a1a-904c-3e1237da20bb
+{
+java:S1854"8Remove this useless assignment to local variable "cal2".(ûî×Œ8ÓóÄÃğ1J$64aeabe2-5f4e-4be7-8043-5c6d6fab6d64
+z
+java:S1854"7Remove this useless assignment to local variable "cal".(íúâë8ÓóÄÃğ1J$55fa1d8e-2457-47c5-9504-6375b1b04bc5
+~	java:S125"<This block of commented-out lines of code should be removed.(äı»Ú8ÕóÄÃğ1J$5e2f4974-86b6-497c-a8d9-d705bda09ca6
+k
+java:S1481"(Remove this unused "cal" local variable.(íúâë8ØóÄÃğ1J$b6f96e99-121c-4be0-8550-c80cfa43981c
+l
+java:S1481")Remove this unused "cal2" local variable.(ûî×Œ8ÚóÄÃğ1J$ce57ecf8-bbea-4e28-9821-faf0f554c692

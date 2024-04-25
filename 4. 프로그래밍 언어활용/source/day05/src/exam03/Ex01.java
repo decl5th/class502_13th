@@ -1,7 +1,5 @@
 package exam03;
 
-import exam01.C;
-
 public class Ex01 {
     public static void main(String[] args) {
         // Calculator cal = new Calculator(); 객체가 될 수 없다는 오류 -> 추상 클래스니까

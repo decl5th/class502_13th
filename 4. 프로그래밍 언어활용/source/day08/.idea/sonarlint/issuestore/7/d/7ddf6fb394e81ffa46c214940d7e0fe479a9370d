@@ -1,0 +1,7 @@
+
+™
+java:S1192"QDefine a constant instead of duplicating this literal "str ì£¼ì†Œ: %d%n" 3 times.(ÚÀ³øÿÿÿÿ8’»ğñğ1J$f57bcfb4-7903-489d-b542-c231b4fdc869
+•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¶Á÷œJ$1f6d2f6c-0ebf-40d9-aa0a-7bf64a0de6bf
+r	java:S106"+Replace this use of System.out by a logger.(ÚÀ³øÿÿÿÿ8›»ğñğ1J$947639a9-329a-4644-9491-701272605b90
+r	java:S106	"+Replace this use of System.out by a logger.(ÚÀ³øÿÿÿÿ8œ»ğñğ1J$58f4da55-5cb8-4278-a1b4-d09320093f63
+r	java:S106"+Replace this use of System.out by a logger.(ÚÀ³øÿÿÿÿ8œ»ğñğ1J$d7b0ec42-3277-44c5-bc5f-29c81e1e9acf

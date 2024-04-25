@@ -1,0 +1,18 @@
+
+w
+java:S3740	"/Provide the parametrized type for this generic.(‘ÏÅ¥øÿÿÿÿ8åÖ‹öğ1J$560d5c89-e13d-4171-afdc-13c3df433731
+w
+java:S3740"/Provide the parametrized type for this generic.(¶ş™Çşÿÿÿÿ8çÖ‹öğ1J$67f36313-373f-4962-b2f4-ae54f204b86c
+r
+java:S3740"/Provide the parametrized type for this generic.(äŠ¤Å8çÖ‹öğ1J$f4f6583c-0549-45b6-ba73-eab6ffdcc623
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(éÙ‰Ïùÿÿÿÿ8èÖ‹öğ1J$7e9fb53e-13cc-4ea3-a827-8b30d026380d
+r	java:S106"+Replace this use of System.out by a logger.(Ê ”øÿÿÿÿ8íÖ‹öğ1J$a336208b-7b66-494b-bbe5-19453ed1807a
+m	java:S106"+Replace this use of System.out by a logger.(èó‹°8íÖ‹öğ1J$e932b103-018d-44d5-8c42-210ec5b3e573
+r	java:S106"+Replace this use of System.out by a logger.(‡ò·çúÿÿÿÿ8íÖ‹öğ1J$37b4d6dd-d277-4829-8d05-f0b6b9f79148
+r	java:S106"+Replace this use of System.out by a logger.(´ºŠèÿÿÿÿÿ8íÖ‹öğ1J$f6a47403-3398-41c4-aaa5-e8269bc4e779
+r	java:S106"+Replace this use of System.out by a logger.(¾‚Ü€ûÿÿÿÿ8íÖ‹öğ1J$075496e3-8140-4f88-bd0b-afd3d5dcdc51
+r	java:S106"+Replace this use of System.out by a logger.(áº¾¦şÿÿÿÿ8íÖ‹öğ1J$0643ed4c-f773-4fa5-8503-7248352fb875
+Š
+java:S2133"BRemove this object instantiation and use "Person02.class" instead.(›¹±†şÿÿÿÿ8ş…Œöğ1J$6e306897-32e1-4ebe-b16f-3815b51d2c56
+r	java:S106 "+Replace this use of System.out by a logger.(ºˆ¿ùùÿÿÿÿ8îÖ‹öğ1J$5fc915f7-369f-4ef5-9f65-50c597e7fab6
+r	java:S106!"+Replace this use of System.out by a logger.(Îâğ³ûÿÿÿÿ8¶à“öğ1J$a97f44e9-f1d9-4345-9236-86241d7dcef6

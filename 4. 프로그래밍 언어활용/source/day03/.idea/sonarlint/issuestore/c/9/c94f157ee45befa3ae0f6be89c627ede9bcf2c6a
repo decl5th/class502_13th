@@ -1,10 +1,10 @@
 
-œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¶Á÷œ8Â¯¥Îî1J$d66a06cd-4f03-438f-a158-d46ea1ee5a1a
-m	java:S106"+Replace this use of System.out by a logger.(Ü¯©¹8Ç¯¥Îî1J$699ece91-c7c0-4fd3-ac78-e9cb0ed803dd
-m	java:S106	"+Replace this use of System.out by a logger.(ã“Äª8È¯¥Îî1J$66824752-939d-4e65-aa53-d14741e15af7
-r	java:S106"+Replace this use of System.out by a logger.(œÁ¿¶ûÿÿÿÿ8ò•Ïî1J$9f3ebea0-08de-447f-b211-799203566c52
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¶Á÷œ8Â¯¥Îî1J$ca57a94f-988d-40d5-9ff6-d51a8264fe96
+m	java:S106"+Replace this use of System.out by a logger.(Ü¯©¹8Ç¯¥Îî1J$0a1df7c5-b633-42d2-9c4c-817b0e1a926b
+m	java:S106	"+Replace this use of System.out by a logger.(ã“Äª8È¯¥Îî1J$306ebdc6-2998-4ab3-9344-cb79324ccf23
+r	java:S106"+Replace this use of System.out by a logger.(œÁ¿¶ûÿÿÿÿ8ò•Ïî1J$179747cf-479a-433a-9058-c56379b5daa9
 }
-java:S2209"5Change this instance-reference to a static reference.(œÁ¿¶ûÿÿÿÿ8¿£´Ïî1J$3523f8d5-4649-4752-ac69-e8425bd0bfc1
-r	java:S106"+Replace this use of System.out by a logger.(ª¾«¨ÿÿÿÿÿ8ˆÆ˜Ïî1J$8cfd2cc9-fe9a-4876-9454-82d6465c75db
+java:S2209"5Change this instance-reference to a static reference.(œÁ¿¶ûÿÿÿÿ8¿£´Ïî1J$c2ae75f9-f085-456c-8009-44854b7fc9d9
+r	java:S106"+Replace this use of System.out by a logger.(ª¾«¨ÿÿÿÿÿ8ˆÆ˜Ïî1J$56f11c46-1996-48fd-95bc-b5bf230e3288
 }
-java:S2209"5Change this instance-reference to a static reference.(ª¾«¨ÿÿÿÿÿ8¿£´Ïî1J$8cd28109-9791-4e42-bfee-4510421b2333
+java:S2209"5Change this instance-reference to a static reference.(ª¾«¨ÿÿÿÿÿ8¿£´Ïî1J$2e073f60-fa2a-4284-b2a0-74f8a477431b

@@ -1,0 +1,7 @@
+
+š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(éÙ‰ÏùÿÿÿÿJ$b36cf5cd-30b1-40f0-8cfe-6eca1dca15d1
+
+java:S2095	"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(ã”ª[8–ÃóÊğ1J$9c4f5165-4736-4d9e-bf27-9305c14fa4e6
+
+java:S2677
+"LUse or store the value returned from "readLine" instead of throwing it away.(™¸¡8¹ñôÊğ1J$028d7770-ebb4-4e3c-9db2-d7803415dc2e

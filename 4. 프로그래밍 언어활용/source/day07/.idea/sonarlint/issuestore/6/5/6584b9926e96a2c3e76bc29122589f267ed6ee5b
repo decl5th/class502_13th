@@ -1,0 +1,15 @@
+
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‹»Éúÿÿÿÿ8¶şƒÅğ1J$83fdb0ba-e2f1-4cd5-978a-18e6a92ebe57
+
+java:S2095
+"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(·›±%8»şƒÅğ1J$314f9911-de7f-4c3d-90d5-0dbf7a3fe2a1
+y
+java:S1854
+"7Remove this useless assignment to local variable "fis".(·›±%8¾şƒÅğ1J$f720e146-e077-4c84-8414-86ba960b111d
+j
+java:S1481
+"(Remove this unused "fis" local variable.(·›±%8ÁşƒÅğ1J$ebd5abc8-407d-47c6-965a-279b9c1a60ae
+m	java:S106"+Replace this use of System.out by a logger.(ÓÅœ»8³Ğ…Åğ1J$94763c00-ad0f-43a0-92f9-dd0adf4668e2
+m	java:S106"+Replace this use of System.out by a logger.(ãÓˆ›8Î´‰Åğ1J$15f2f8df-5b0c-43e1-b189-a5ea940cdbff
+ƒ	java:S125"<This block of commented-out lines of code should be removed.(ÜÎş˜ùÿÿÿÿ8¼ı€Æğ1J$801a1b4c-adf7-4d0b-8520-8e5d62668fed
+r	java:S106"+Replace this use of System.out by a logger.(Ü‚Ğùşÿÿÿÿ8í÷¼Åğ1J$87bce2d7-3da5-4b1d-95af-3dea8a3dadd4

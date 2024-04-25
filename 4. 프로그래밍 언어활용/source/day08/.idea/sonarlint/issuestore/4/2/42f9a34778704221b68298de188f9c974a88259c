@@ -1,0 +1,6 @@
+
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(œ‰½Úùÿÿÿÿ8ÎÒÍøğ1J$63ce2430-b3c2-4198-8134-d8b8915052c9
+m	java:S106
+"+Replace this use of System.out by a logger.(ñˆÖ²8¡ÉÒøğ1J$a36617fd-8778-4cac-b078-cba087719d68
+w
+java:S2201"/The return value of "toUpperCase" must be used.(œí¬ûÿÿÿÿ8ÓÒÍøğ1J$4318cdd0-0866-45d9-96ab-9551e6b21d74

@@ -1,0 +1,12 @@
+
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÿĞŞß8ôâÎñğ1J$0145b637-7fb6-4278-a6cf-deb26b25ecf1
+c
+java:S2129"!Remove this "Integer" constructor(ÆÅà>8şâÎñğ1J$7b8e5747-de97-4a8a-b972-39a977cba156
+Š
+java:S5738"HRemove this call to a deprecated method, it has been marked for removal.(ÆÅà>8ÿâÎñğ1J$310d1964-57f8-413c-849e-cea51131107b
+i
+java:S2129"!Remove this "Integer" constructor(Ü÷ïÄûÿÿÿÿ8ê‹Ïñğ1J$73f7db1e-9018-4390-84a2-1378bf6360e4
+
+java:S5738"HRemove this call to a deprecated method, it has been marked for removal.(Ü÷ïÄûÿÿÿÿ8ê‹Ïñğ1J$be24360e-cea3-43c1-b6a4-3c106dde5826
+m	java:S106"+Replace this use of System.out by a logger.(Î¿§¨8‰½Ğñğ1J$0e49fb2a-62f8-4e6f-9a04-ad47c1acecb1
+m	java:S106"+Replace this use of System.out by a logger.(‹šáˆ8”ÉÒñğ1J$16774715-9eb5-441d-836b-a336b7d9fa56

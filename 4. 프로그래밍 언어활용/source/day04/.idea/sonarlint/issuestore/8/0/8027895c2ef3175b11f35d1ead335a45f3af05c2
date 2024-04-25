@@ -1,3 +1,3 @@
 
-	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÅËÂÉ8çÓôî1J$f6310b49-5cf4-413b-a717-bb292cb3a9ef
-r	java:S106"+Replace this use of System.out by a logger.(Å´§¡ıÿÿÿÿ8íÓôî1J$9405f990-a2df-49ef-802d-9dda3ccfbb65
+	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÅËÂÉ8çÓôî1J$f9bbe533-deaa-4c08-9595-ea6c11431dcd
+r	java:S106"+Replace this use of System.out by a logger.(Å´§¡ıÿÿÿÿ8íÓôî1J$d556d7f9-1268-4376-9d12-7f104dda8dcc

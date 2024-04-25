@@ -6,7 +6,9 @@ public class Ex01 {
         cloth.buy();
         cloth.sell();
 
-        Buyer buyer = cloth;
+        System.out.println("-----형변환------ ");
+
+        Buyer buyer = cloth; // 형변환
         buyer.buy();
 
 

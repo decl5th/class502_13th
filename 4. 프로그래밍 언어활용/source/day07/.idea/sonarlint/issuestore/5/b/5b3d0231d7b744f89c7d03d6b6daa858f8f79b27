@@ -1,0 +1,10 @@
+
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(éÙ‰Ïùÿÿÿÿ8­¸‡Ëð1J$48ba3f6e-344a-4936-9ae7-558113a1f8da
+‹
+java:S3518"CMake sure this expression can't be zero before doing this division.(¼ÒÅƒøÿÿÿÿ8¯¸‡Ëð1J$ee51a0b6-5363-4fa4-aeb3-78639615653b
+x
+java:S1854	"5Remove this useless assignment to local variable "c".(›“Ÿ’8±¸‡Ëð1J$af7125aa-b2f8-4683-ab0c-106116148bac
+}
+java:S1854"5Remove this useless assignment to local variable "c".(¼ÒÅƒøÿÿÿÿ8±¸‡Ëð1J$e705d1bb-9892-4dba-8796-9923b842fc60
+i
+java:S1481"&Remove this unused "c" local variable.(»ç»“8²¸‡Ëð1J$7b1ec104-68d7-4c43-bdaf-213e6e67ddd7

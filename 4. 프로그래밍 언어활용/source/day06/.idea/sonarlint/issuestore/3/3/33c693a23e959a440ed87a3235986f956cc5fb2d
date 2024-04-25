@@ -1,4 +1,4 @@
 
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(éÙ‰Ïùÿÿÿÿ8ĞùÖŸğ1J$3081e925-3d23-4030-9329-d931d3b2b0fa
-m	java:S106"+Replace this use of System.out by a logger.(ÖŞ…ê8ÓùÖŸğ1J$7beb44e9-ceaf-4a62-b708-353cd7c1bab5
-m	java:S106"+Replace this use of System.out by a logger.(ÒÕƒ–8‚¦Ñ¢ğ1J$c62559cc-4fae-4f47-aceb-1a09a03812bc
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(éÙ‰Ïùÿÿÿÿ8ĞùÖŸğ1J$1d688632-085c-426a-a58d-b256dded66bf
+m	java:S106"+Replace this use of System.out by a logger.(ÖŞ…ê8ÓùÖŸğ1J$1fba9f23-e32f-4e85-b480-7266d7fee3dc
+m	java:S106"+Replace this use of System.out by a logger.(ÒÕƒ–8‚¦Ñ¢ğ1J$470d54a8-1da0-4a5c-b81a-21ecd2b8316b

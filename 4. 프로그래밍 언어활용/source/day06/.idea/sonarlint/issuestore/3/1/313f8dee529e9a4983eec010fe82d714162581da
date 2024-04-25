@@ -1,5 +1,5 @@
 
 k
-java:S1604"(Make this anonymous inner class a lambda(¯í¸›8²Ç¦ğ1J$1631a5b9-ed57-43c9-81de-9cd3aadd7eab
-œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‹İŸÛ8³Ç¦ğ1J$291f3532-5fa4-4f99-bbf1-da2369266308
-r	java:S106"+Replace this use of System.out by a logger.(®ıáëûÿÿÿÿ8¸Ç¦ğ1J$4048a64f-48a6-47ee-8463-c38f0fa3c3ba
+java:S1604"(Make this anonymous inner class a lambda(¯í¸›8²Ç¦ğ1J$5ebb7a1e-4356-4b66-a762-42a1713ed1af
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‹İŸÛ8³Ç¦ğ1J$2104b690-399c-479c-8c5f-46a14a8c5934
+r	java:S106"+Replace this use of System.out by a logger.(®ıáëûÿÿÿÿ8¸Ç¦ğ1J$433fa555-6c44-4aec-8c84-2001d763734e

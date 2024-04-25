@@ -1,0 +1,6 @@
+
+•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¶Á÷œJ$f7113c16-f381-4096-b4ec-983313060e8c
+¢
+java:S1149"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(“¥ŒÍ8Äžòñð1J$4a83ee51-97af-4ca3-954a-cabf033c95b1
+l	java:S106"+Replace this use of System.out by a logger.(ƒÚáB8Éžòñð1J$3159ec21-0a0a-4dfb-9bf2-4ab119431d48
+~	java:S125"<This block of commented-out lines of code should be removed.(‡‹êí8Êžòñð1J$3dec80f5-5356-43be-b1cd-b999bccacf37

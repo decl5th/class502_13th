@@ -17,8 +17,6 @@ J
 src/exam03/Calculator.java,0\d\0d9fb0cb815962e844bdc266dc9c43f79d0342e6
 P
  src/exam03/SimpleCalculator.java,8\b\8b61762c72af81941fd434d3fc3f7ea6a54ed5da
-=
-src/Ex01.java,c\5\c58dfd019c9dbf650dac9b0294a7245cb5d40f43
 D
 src/exam03/Ex01.java,d\a\dab482c5f05d0d716a52104f4e638a06c0ab34b2
 F
@@ -37,12 +35,6 @@ A
 src/exam05/C.java,e\a\ea763f2cd222b133761b34909299f3c7d462c778
 D
 src/exam05/Ex01.java,0\b\0b775a03a868118bd80491dde2c85d7322557c26
-A
-src/exam06/A.java,4\8\48209ca7855965cde74084b54ff6a7a08781bae7
-A
-src/exam06/B.java,d\1\d183b83a2ae691ac9727a6f0ccc1703ffacd7258
-A
-src/exam06/C.java,5\e\5e629ec789e01e81885546028161a48bfcd99faa
 F
 src/exam06/ClassA.java,3\b\3b9f6d8548e51bb096e8951299a48df183f54aef
 F
@@ -85,3 +77,11 @@ D
 src/exam12/Ex01.java,1\7\17b58ad78f0d339ccc2375990f0232fb3c3ab74a
 D
 src/exam12/Ex02.java,3\1\313f8dee529e9a4983eec010fe82d714162581da
+B
+src/exam05/A1.java,f\f\ff28ede8a09aa7ca6e9470cd6a3be479c080eb44
+B
+src/exam05/B1.java,1\8\184e9e1ce6bb1e0e818f45093b293bf0742ac805
+B
+src/exam05/C1.java,7\3\7309f8416e7fd2eafe9fed6da324bbdd333277c5
+D
+src/exam05/Ex02.java,e\4\e43c70fb8b2c1ae59a76c92ccef99c1f265812cf
