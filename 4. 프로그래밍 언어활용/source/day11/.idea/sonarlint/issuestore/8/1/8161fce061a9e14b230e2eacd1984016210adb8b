@@ -1,0 +1,9 @@
+
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¶Á÷œ8Ôí“½ò1J$56886bad-a1e2-4265-bf90-f36fe9d0b1dd
+Y
+java:S1854"<Remove this useless assignment to local variable "grapeBox".(·Æ”Å8˜ñÃò1
+~	java:S125
+"<This block of commented-out lines of code should be removed.(ž×þÖ8Ùí“½ò1J$3780a1fe-2e52-4b0d-b589-45145ac0f09e
+J
+java:S1481"-Remove this unused "grapeBox" local variable.(·Æ”Å8žñÃò1
+~	java:S125"<This block of commented-out lines of code should be removed.(ÝêûÇ8 •½ò1J$e7ea2475-091b-4401-b18c-8fe782583b2c

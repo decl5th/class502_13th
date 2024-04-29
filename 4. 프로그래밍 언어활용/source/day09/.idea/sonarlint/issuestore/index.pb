@@ -45,11 +45,15 @@ D
 src/exam03/Ex01.java,d\a\dab482c5f05d0d716a52104f4e638a06c0ab34b2
 F
 src/exam03/Format.java,3\d\3dc6b406c2e2def338902e424ed2d7ff5ad3573b
-D
-src/exam03/Ex02.java,c\8\c8c54ddc90c5b6539c6a3ee5ce84a7db9c87ade2
 I
 src/exam03/Substring.java,5\7\570aea5cf9c722d17d82fbad63eacf5d375fbfb4
 G
 src/exam03/IsEmpty.java,7\a\7a8aed7611abb6e9a62763f181b293a8104ca31d
 G
 src/exam03/IndexOf.java,6\f\6f991d7f36eb15ae60c9989c293a8db62df11745
+G
+src/exam03/Matched.java,9\4\946c12965c98a480caa6db0ef3bea485ac1bbe1f
+G
+src/exam03/Matches.java,0\c\0cf5c5c58a575901e6260aec2905ef536ed17838
+D
+src/exam03/Trim.java,3\3\33ddcd5991c6dacdb2da3d4e291b28daae052f8c

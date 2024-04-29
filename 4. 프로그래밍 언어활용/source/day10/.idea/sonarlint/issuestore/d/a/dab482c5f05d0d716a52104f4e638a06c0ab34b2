@@ -1,0 +1,6 @@
+
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÿÐÞß8²‚ÞÊñ1J$dc607ade-4a3c-4aee-a9f7-4cd6d63e3263
+m	java:S106	"+Replace this use of System.out by a logger.(ëñ÷Û8º‚ÞÊñ1J$75982e9c-cc07-497c-a9fc-898492e39da2
+‡
+java:S6201"DReplace this instanceof check and cast with 'instanceof Apple grape'(ðÃ¿µ8½‚ÞÊñ1J$21c8399a-5038-4558-9bc2-0e7ed81ba86b
+m	java:S106"+Replace this use of System.out by a logger.(Áôää8¾‚ÞÊñ1J$25e32f20-646c-4ac7-bbd7-29cee20bfb18

@@ -1,0 +1,8 @@
+
+…
+java:S4977"=Rename "T" which hides a type parameter from the outer scope.(ä­úşÿÿÿÿ8İİÃ½ò1J$63bf955a-c0da-4e10-99ba-3953fe7083aa
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÿĞŞß8ğ¾½ò1J$509e7a73-a37e-43b2-a703-196b58921aa2
+Ä
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¸‘»·8ò¾½ò1J$1af8a3a6-febb-4e22-a2d1-4c93fa97181f
+p
+java:S1068"(Remove this unused "item" private field.(Êç•»ÿÿÿÿÿ8õ¾½ò1J$2e8e7cce-5c14-4df0-a2df-3619d09eb015

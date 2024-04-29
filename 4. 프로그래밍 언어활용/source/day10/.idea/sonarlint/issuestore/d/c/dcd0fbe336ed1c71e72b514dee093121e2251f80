@@ -1,0 +1,12 @@
+
+m	java:S117
+"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯´Ü8ªò£Ãñ1
+•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ñç“ÉJ$0b2f8dfe-ca17-4723-879e-4a152dc15c62
+T
+java:S1854
+"7Remove this useless assignment to local variable "Bus".(¯´Ü8°ò£Ãñ1
+ƒ	java:S125"<This block of commented-out lines of code should be removed.(¼Ğ£­üÿÿÿÿ8¥Ã£Ãñ1J$bd969c8d-efce-459f-ac31-5ee617445741
+E
+java:S1481
+"(Remove this unused "Bus" local variable.(¯´Ü8³ò£Ãñ1
+L	java:S106"+Replace this use of System.out by a logger.(—…¸„şÿÿÿÿ8³ò£Ãñ1
