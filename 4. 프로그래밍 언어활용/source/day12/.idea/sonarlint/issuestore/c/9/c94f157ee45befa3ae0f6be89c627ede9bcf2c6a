@@ -1,0 +1,12 @@
+
+Š
+java:S1192
+"GDefine a constant instead of duplicating this literal "user03" 3 times.(İµÓ8ªŸ…ìò1J$b99b5841-3370-4605-9c20-e34b83a82aa8
+Š
+java:S1192"GDefine a constant instead of duplicating this literal "user05" 3 times.(İš‚8ªŸ…ìò1J$9a91cf31-69d6-47fe-8882-7a4519d2cd8d
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¶Á÷œ8«Ÿ…ìò1J$9aedc16f-8ae2-4a01-a54e-cbde806211e1
+ƒ	java:S125"<This block of commented-out lines of code should be removed.(„’“–ÿÿÿÿÿ8²Ÿ…ìò1J$b99e95c6-47fa-4623-8cbd-c61cde1e3e64
+m	java:S106"+Replace this use of System.out by a logger.(Ü‘¹8´Ÿ…ìò1J$e3b52948-4073-4618-a958-5c5040541d7c
+r	java:S106"+Replace this use of System.out by a logger.(§Êãôÿÿÿÿÿ8´Ÿ…ìò1J$5a48ace8-57c6-40ee-99ec-2110f127a64d
+r	java:S106 "+Replace this use of System.out by a logger.(úòœÁøÿÿÿÿ8´Ÿ…ìò1J$bba00aad-81b7-4a4a-ba90-795b0cfe476a
+r	java:S106""+Replace this use of System.out by a logger.(š•‡Ãşÿÿÿÿ8´Ÿ…ìò1J$dd9e0bba-9026-4b0e-9934-530822526c28

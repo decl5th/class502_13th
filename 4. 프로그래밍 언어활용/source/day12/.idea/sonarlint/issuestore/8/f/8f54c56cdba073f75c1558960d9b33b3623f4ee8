@@ -1,0 +1,10 @@
+
+ˆ	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(–Ğì€8»Å×ïò1J$a1284105-ac8b-4922-b04f-44671086f3f7
+ˆ	java:S112!"FDefine and throw a dedicated exception instead of using a generic one.(¨¢šƒ8»Å×ïò1J$2f2ad226-9ce0-4821-96e2-42e1c4da3cd5
+ˆ	java:S112&"FDefine and throw a dedicated exception instead of using a generic one.(‰ ûå8»Å×ïò1J$e771881d-a5a6-447f-9f06-873b4b2db7dc
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÿĞŞß8½Å×ïò1J$74912083-7c36-4573-99b5-550848723924
+
+java:S5993"9Change the visibility of this constructor to "protected".(ø¤¼Şÿÿÿÿÿ8ÂÅ×ïò1J$f1bedff4-6312-487f-9484-96ab0cb3b9e7
+m	java:S106"+Replace this use of System.out by a logger.(âÛ“8ÄÅ×ïò1J$d5129ff7-a3b2-400e-823b-925d332e236c
+r	java:S106-"+Replace this use of System.out by a logger.(Êšûêúÿÿÿÿ8ÇÅ×ïò1J$151c8a32-8b44-4a99-9629-f29acb232e8f
+m	java:S1062"+Replace this use of System.out by a logger.(Àì€Œ8ÈÅ×ïò1J$451750cc-7846-4edf-acc6-6e169de00f2b
