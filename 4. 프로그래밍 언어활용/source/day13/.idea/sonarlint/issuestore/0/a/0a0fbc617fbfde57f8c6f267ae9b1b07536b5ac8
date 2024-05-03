@@ -1,0 +1,10 @@
+
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¤½áø8°‘†˜ó1J$4c4ecbd1-48d8-4f00-9920-5af2d432433c
+
+java:S5993
+"9Change the visibility of this constructor to "protected".(ÌœØêúÿÿÿÿ8´‘†˜ó1J$631f9129-3308-417a-9fb0-df0fa36a9d41
+
+java:S1117"7Rename "menu" which hides the field declared at line 7.(Šèªüÿÿÿÿ8º‘†˜ó1J$2b4ee044-0462-4d9f-8b81-ca056a811e3e
+m	java:S106"+Replace this use of System.out by a logger.(ˆ½Ó‹8¼‘†˜ó1J$2e3800c9-2e05-45d2-82d4-48843fd4ca09
+n
+java:S1068"&Remove this unused "p1" private field.(‘‹áÿÿÿÿÿ8²•ƒ™ó1J$e35e9fc2-36ff-4872-9cea-c96a9e9a9f7b

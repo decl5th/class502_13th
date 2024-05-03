@@ -1,0 +1,15 @@
+
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ñç“É8¸´™¸ó1J$c4b4e76f-6a01-4e74-97f5-43535f8eac1c
+|
+java:S1854	"9Remove this useless assignment to local variable "func3".(šÅÈƒ8ÝÚš¸ó1J$5e56eea7-fd4d-4f44-b72b-83a4ee157679
+ž
+java:S4276"\Refactor this code to use the more specialised Functional Interface 'UnaryOperator<Integer>'(›é¤s8Á´™¸ó1J$6fb262e3-b078-4f88-b15c-e8d6c855604e
+ž
+java:S4276	"[Refactor this code to use the more specialised Functional Interface 'ToIntFunction<String>'(šÅÈƒ8Â´™¸ó1J$395b7680-07d3-4824-a944-9d48152c9907
+m
+java:S1481	"*Remove this unused "func3" local variable.(šÅÈƒ8âÚš¸ó1J$f968d090-0d25-4ead-8eee-a27bdede22ea
+ž
+java:S4276
+"[Refactor this code to use the more specialised Functional Interface 'ToIntFunction<String>'(¶àÊŠ8Â´™¸ó1J$643428c4-0aec-4e48-b7f3-fdfcf7e38654
+r	java:S106"+Replace this use of System.out by a logger.(®ýáëûÿÿÿÿ8Ä´™¸ó1J$383b38fb-9404-4984-9ff8-61dddcfd1769
+~	java:S125"<This block of commented-out lines of code should be removed.(Øåý…8Å´™¸ó1J$b6d3cd89-e914-459a-9e43-bffc005938c9

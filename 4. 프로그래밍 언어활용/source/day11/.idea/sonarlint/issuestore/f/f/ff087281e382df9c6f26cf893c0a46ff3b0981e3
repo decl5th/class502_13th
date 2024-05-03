@@ -1,9 +1,9 @@
 
-š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(éÙ‰ÏùÿÿÿÿJ$767be5de-5685-4dc1-a466-f6a1ccd2955c
+š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(éÙ‰ÏùÿÿÿÿJ$1a4a5947-d3cb-4f07-a8d9-d0ca44821641
 “
-java:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(àâœà8ù—ºÄò1J$fc6f1eea-7d6f-4efd-be02-23e7ec8fd9c9
-r	java:S106"+Replace this use of System.out by a logger.(²É©–ùÿÿÿÿ8ç¶¼Äò1J$45eca3da-c80f-4ee6-9a82-980e40b98ec4
-r	java:S106"+Replace this use of System.out by a logger.(²É©–ùÿÿÿÿ8ç¶¼Äò1J$37029d9e-8906-46eb-b1e3-96e8be00121b
-r	java:S106"+Replace this use of System.out by a logger.(²É©–ùÿÿÿÿ8ôå¼Äò1J$8c6410a6-243e-45d0-81e4-3608819c66ca
-r	java:S106"+Replace this use of System.out by a logger.(²É©–ùÿÿÿÿ8ôå¼Äò1J$95872292-aae1-4324-876a-9d63e5d3fb09
-r	java:S106"+Replace this use of System.out by a logger.(²É©–ùÿÿÿÿ8õå¼Äò1J$22aabdf6-5737-4566-9e49-0cfa5066858e
+java:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(àâœà8ù—ºÄò1J$af01a400-f14b-46aa-84e0-23d69ebb0ce6
+r	java:S106"+Replace this use of System.out by a logger.(²É©–ùÿÿÿÿ8ç¶¼Äò1J$eaae461d-3ec3-459d-a479-cbc877e17acf
+r	java:S106"+Replace this use of System.out by a logger.(²É©–ùÿÿÿÿ8ç¶¼Äò1J$a75ed234-5ba9-4304-8995-9d8f9bdbf201
+r	java:S106"+Replace this use of System.out by a logger.(²É©–ùÿÿÿÿ8ôå¼Äò1J$5001d815-1815-4307-b420-84e4f429c098
+r	java:S106"+Replace this use of System.out by a logger.(²É©–ùÿÿÿÿ8ôå¼Äò1J$d8998200-9bc0-4729-876b-e8291c1aeaf9
+r	java:S106"+Replace this use of System.out by a logger.(²É©–ùÿÿÿÿ8õå¼Äò1J$62e7d4ec-58aa-45e7-94cf-22e6a003a443

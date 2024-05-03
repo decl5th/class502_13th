@@ -1,0 +1,20 @@
+
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ñç“É8Šê—¹ó1J$669c187b-33e2-49cc-b9b0-1522bde361e4
+|
+java:S1854"9Remove this useless assignment to local variable "cond2".(±É°Ì8ß™¹ó1J$fafdcfab-fe44-4868-9988-dd9b4f0cf534
+
+java:S1854"9Remove this useless assignment to local variable "cond1".(à½ú´úÿÿÿÿ8ê—¹ó1J$c052e03e-96e2-4534-9415-5cbe0408a791
+|
+java:S1854	"9Remove this useless assignment to local variable "func2".(Ãó‹È8ê—¹ó1J$6d1ec86c-4989-41c6-99b2-1efb950e1f27
+{
+java:S1854"9Remove this useless assignment to local variable "func1".(ü÷‚28ê—¹ó1J$8529aaf3-78f6-4b73-8013-3b9dcc591afd
+l
+java:S1481"*Remove this unused "func1" local variable.(ü÷‚28‘ê—¹ó1J$5a7ab81d-2dcd-4c12-9d34-9668bd1319a4
+m
+java:S1481	"*Remove this unused "func2" local variable.(Ãó‹È8‘ê—¹ó1J$36c8bb65-3691-402d-93b0-1b536a137528
+ƒ
+java:S1612";Replace this lambda with method reference 'Object::equals'.(à½ú´úÿÿÿÿ8“ê—¹ó1J$817a41d4-17d8-4faa-9aad-929419d51177
+r
+java:S1481"*Remove this unused "cond1" local variable.(à½ú´úÿÿÿÿ8”ê—¹ó1J$9a48a429-096e-426c-b2c1-18e927b78ab4
+m
+java:S1481"*Remove this unused "cond2" local variable.(±É°Ì8¥ß™¹ó1J$ec7ebc36-d745-4703-ac6c-352b4c1315b7

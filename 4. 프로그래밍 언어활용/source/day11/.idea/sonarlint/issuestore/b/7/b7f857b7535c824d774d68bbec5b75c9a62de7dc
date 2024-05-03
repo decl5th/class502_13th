@@ -1,6 +1,6 @@
 
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(éÙ‰Ïùÿÿÿÿ8åÆÄò1J$f6ea7f31-d85f-41c4-a524-47c628a5f0e5
-~	java:S125"<This block of commented-out lines of code should be removed.(—µç8ÿÆÄò1J$8613ea7e-2a17-4425-8fe6-4ed3a7e23e0c
-m	java:S106"+Replace this use of System.out by a logger.(«‹Îõ8€ÇÄò1J$b570b576-fb53-4619-bf04-a5911d4f7c78
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(éÙ‰Ïùÿÿÿÿ8åÆÄò1J$839b2a28-f991-429b-b121-d941b4a0c921
+~	java:S125"<This block of commented-out lines of code should be removed.(—µç8ÿÆÄò1J$5ac9024a-f892-4fe6-97b2-fe32da3410fe
+m	java:S106"+Replace this use of System.out by a logger.(«‹Îõ8€ÇÄò1J$50bdcd6f-a66c-4c6c-832c-2fc05baf84e9
 s
-java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ÏÃÜÅò1J$d7a2b7e3-7280-429b-a293-609351d5331f
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ÏÃÜÅò1J$ddc6bd56-f0f1-4887-a918-b5f7b023f5cd

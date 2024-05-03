@@ -1,7 +1,7 @@
 
-i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Š–Áğ8åÔğÄò1
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(éÙ‰Ïùÿÿÿÿ8æÔğÄò1
-‡
-java:S1149"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(ÆŠ¼ëûÿÿÿÿ8ëÔğÄò1
-L	java:S106"+Replace this use of System.out by a logger.(‚£ù¹ùÿÿÿÿ8íÔğÄò1
-L	java:S106"+Replace this use of System.out by a logger.(‚£ù¹ùÿÿÿÿ8íÔğÄò1
+	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Š–Áğ8åÔğÄò1J$8965401d-a54d-4f63-92e8-3c7976abd4f6
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(éÙ‰Ïùÿÿÿÿ8æÔğÄò1J$3b85242a-d86e-4fa2-9557-3649e73073e7
+­
+java:S1149"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(ÆŠ¼ëûÿÿÿÿ8ëÔğÄò1J$89a40889-0f6c-46cc-bd10-d569aaefc60a
+r	java:S106"+Replace this use of System.out by a logger.(‚£ù¹ùÿÿÿÿ8íÔğÄò1J$398f039f-e95f-4a8b-8635-1277265671e6
+r	java:S106"+Replace this use of System.out by a logger.(‚£ù¹ùÿÿÿÿ8íÔğÄò1J$f9a0c0a3-a066-40fb-ae50-ad9ea6bbe9a0

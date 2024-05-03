@@ -1,0 +1,8 @@
+
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ñç“É8–Î¤êó1J$69bc97de-f178-414f-894b-62d030c8f51f
+i
+java:S3864"!Remove this use of "Stream.peek".(Á±´àüÿÿÿÿ8Î¤êó1J$2b17703a-87c0-4957-acde-f331aa5502c4
+r	java:S106"+Replace this use of System.out by a logger.(Á±´àüÿÿÿÿ8ŸÎ¤êó1J$35c72c99-2b5c-4ec7-aba4-21499906bee8
+r	java:S106"+Replace this use of System.out by a logger.(ÂƒÈ‚ûÿÿÿÿ8 Î¤êó1J$87683f1a-04c2-4b4e-a629-6c9f252ae16b
+w
+java:S1128"4Remove this unused import 'java.util.stream.Stream'.(ó÷”8¡Î¤êó1J$567a679b-c167-41a9-96fe-8f771c814f11

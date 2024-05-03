@@ -1,0 +1,9 @@
+
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ñç“É8õŸ­¹ó1J$cbeb66a8-59f2-435f-b9d7-511fbe5b56c3
+~
+java:S1854"6Remove this useless assignment to local variable "s1".(õ‹ÜŞıÿÿÿÿ8øŸ­¹ó1J$a006680a-0b66-450b-a9db-c3915800bbc8
+~
+java:S1612"6Replace this lambda with method reference 'Book::new'.(õ‹ÜŞıÿÿÿÿ8úŸ­¹ó1J$80b3f01e-7914-4231-a6b5-a62f9e0249f8
+o
+java:S1481"'Remove this unused "s1" local variable.(õ‹ÜŞıÿÿÿÿ8ûŸ­¹ó1J$0113e4a4-9750-4d07-9f16-6dfa7bf0d791
+m	java:S106"+Replace this use of System.out by a logger.(—Ş“8üŸ­¹ó1J$c492ee0f-3fc7-417b-99be-e005aa4835b1

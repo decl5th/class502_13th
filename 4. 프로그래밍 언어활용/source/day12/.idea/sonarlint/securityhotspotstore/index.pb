@@ -27,9 +27,9 @@ R
 "src/exam03/AbstractCoffeeShop.java,8\f\8f54c56cdba073f75c1558960d9b33b3623f4ee8
 I
 src/exam03/Starbucks.java,9\0\90059c7e520c1154f7771ff4d468a0d2fd2f961c
-J
-src/exam03/CoffeeBean.java,8\1\81f48b2dd6de078f2fe4998cbf762ec45d904ff8
 L
 src/exam03/TwoSomePlace.java,d\0\d07bae26182b81eb45c8bedb5371946cbe780933
 D
 src/exam03/Ex01.java,d\a\dab482c5f05d0d716a52104f4e638a06c0ab34b2
+G
+src/exam04/Company.java,9\a\9afad417de132025b1271a56c8629263c15d761d

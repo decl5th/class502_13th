@@ -1,0 +1,12 @@
+
+	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ρη“Ι8Λ‚ΫΉσ1J$955f49ea-e12d-4e6e-ace5-bfc7cb1f630c
+y
+java:S1854"6Remove this useless assignment to local variable "t2".(ΥΪ•8Ο‚ΫΉσ1J$000e61ec-23ec-498a-ab9a-041acbb4aa4c
+y
+java:S1854"6Remove this useless assignment to local variable "t1".(©«©Κ8Ο‚ΫΉσ1J$31b9fc65-96bf-40f1-a704-7d1357028a3d
+~
+java:S1612";Replace this lambda with method reference 'this::getTitle'.(©«©Κ8Π‚ΫΉσ1J$928caa9e-a8f1-404b-9ff7-de491773bdee
+j
+java:S1481"'Remove this unused "t1" local variable.(©«©Κ8Σ‚ΫΉσ1J$3dc7bfd6-7df1-4c6f-8749-5378c16922b8
+j
+java:S1481"'Remove this unused "t2" local variable.(ΥΪ•8Σ‚ΫΉσ1J$f166e296-5bd6-4246-9aef-ffef4f7d4523
