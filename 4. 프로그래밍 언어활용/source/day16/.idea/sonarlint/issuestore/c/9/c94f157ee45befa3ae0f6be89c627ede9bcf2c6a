@@ -1,0 +1,10 @@
+
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¶Á÷œ8ÚÇüõ1J$908a2c8e-8fa2-437d-a970-5d5d73e3eda6
+m	java:S106"+Replace this use of System.out by a logger.(²¨ç÷8áÇüõ1J$9310ca75-0893-4e6d-8c84-f4e55071b473
+r
+java:S1874	"/Remove this use of "getYear"; it is deprecated.(èæöù8íÇüõ1J$90aa60fc-c97e-49e3-b796-e3f896d64c29
+s
+java:S1874
+"0Remove this use of "getMonth"; it is deprecated.(Æ¾†Ú8îÇüõ1J$84e4a480-6f71-41fe-a510-f004cb0f5e5c
+r	java:S106"+Replace this use of System.out by a logger.(Ê¹à¨ÿÿÿÿÿ8èóüõ1J$5e19df5c-63d0-4d2b-8f9c-96e82a7f172a
+m	java:S106"+Replace this use of System.out by a logger.(ˆ§Ê8¢İ…õ1J$f01a1de2-99c5-421e-8195-52a74c8cb07a

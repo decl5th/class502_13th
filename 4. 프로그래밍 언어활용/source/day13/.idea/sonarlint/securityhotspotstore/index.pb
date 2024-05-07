@@ -63,9 +63,3 @@ I
 src/test0501q5/prove.java,f\c\fc6ba77aedb94abf760f39d44d29e7ce71c12aa7
 I
 src/test0501q5/Prove.java,f\d\fd64597244a2c7ee6d94c5bdfddc09db663c2e9a
-T
-$src/test0501q3myself/CoffeeShop.java,5\4\545a115a821f6ee1b0f0a179355b9622f4046123
-R
-"src/test0501q3myself/AbsCheck.java,e\5\e5527dacf4724bda06d81bc530623b137603be78
-P
- src/test0501q3myself/Person.java,b\d\bdbe645c0cb2855fa31620ab8c3f49e6819d9c3b

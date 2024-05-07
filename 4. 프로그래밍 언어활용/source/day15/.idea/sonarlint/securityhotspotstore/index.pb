@@ -8,8 +8,6 @@ D
 D
 src/exam01/Ex04.java,8\4\84d7729e65bc6bce5f3bc4184995609418f834a4
 D
-src/exam01/psvm.java,9\a\9a1f13c1fe9c7088df1a2464f4091c821754fb1f
-D
 src/exam01/Ex05.java,d\c\dcd0fbe336ed1c71e72b514dee093121e2251f80
 H
 src/exam01/Ex05test.java,7\0\70cf76eef3dc32e2cbdcd24f76b742210c1d668a
