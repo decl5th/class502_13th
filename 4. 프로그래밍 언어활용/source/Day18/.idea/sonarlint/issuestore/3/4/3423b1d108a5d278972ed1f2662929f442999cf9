@@ -1,0 +1,10 @@
+
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¶Á÷œ8£²Îçõ1J$ce30aabe-bb15-4e6c-a23e-04eff63c71c7
+r	java:S106"+Replace this use of System.out by a logger.(Ùğóşÿÿÿÿ8¨²Îçõ1J$861e920a-a844-4308-917a-de6d8388a0f8
+l	java:S106"+Replace this use of System.out by a logger.(ş£ÁQ8©²Îçõ1J$32546d81-a38d-4d06-8bc3-710eb65bb1e9
+t
+java:S1128"1Remove this unused import 'java.text.DateFormat'.(÷Œá¼8©²Îçõ1J$a9b66a3b-8d27-4355-920b-d512c89aa99b
+…
+java:S1128"=Remove this unused import 'java.time.chrono.ChronoLocalDate'.(‘Ë¡°ÿÿÿÿÿ8©²Îçõ1J$b796133b-5183-42d2-8318-2e33aada09fd
+ƒ
+java:S1128";Remove this unused import 'java.time.chrono.IsoChronology'.(²ç·Õÿÿÿÿÿ8©²Îçõ1J$96d4554c-cc1f-4e0d-b9f6-6e0a7cf4cc1e

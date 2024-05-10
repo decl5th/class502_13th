@@ -1,0 +1,22 @@
+
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¶Á÷œ8Ø“şèõ1J$bcb8ad5b-818b-40dd-b8ac-5f8e57b8368e
+m	java:S106"+Replace this use of System.out by a logger.(°Ãïæ8ì“şèõ1J$e2c9f53a-9bd7-408d-b404-7c28acfe1f44
+m	java:S106"+Replace this use of System.out by a logger.(ÉÉª8í“şèõ1J$d4467fc5-029c-407c-b40c-b18705899146
+r	java:S106"+Replace this use of System.out by a logger.(éÂ”„şÿÿÿÿ8î“şèõ1J$72eb9577-f4ab-443d-a3c5-9e07b30f4864
+r	java:S106"+Replace this use of System.out by a logger.(Îè„ßüÿÿÿÿ8î“şèõ1J$4d814975-7216-46c8-b78c-46dc585832e7
+m	java:S106"+Replace this use of System.out by a logger.(ˆÁº£8ï“şèõ1J$0c1a5a88-d982-4c7d-9a45-ecd18883bd16
+‡
+java:S18545"?Remove this useless assignment to local variable "daysOfMonth".(öÙÂıÿÿÿÿ8ğ“şèõ1J$407fcc74-8c6b-4321-af24-e6de71f9592e
+€
+java:S1854/"8Remove this useless assignment to local variable "yoil".(‡ÀÄòşÿÿÿÿ8ğ“şèõ1J$fcf3452d-5dc5-453e-ae26-9b67816b878d
+~
+java:S1172&"6Remove these unused method parameters "year", "month".(“Æõôÿÿÿÿÿ8ñ“şèõ1J$0c5268cc-d44a-490b-a801-8c82f8108512
+q
+java:S1481/")Remove this unused "yoil" local variable.(‡ÀÄòşÿÿÿÿ8ò“şèõ1J$d1466e3a-d82b-4e13-ac6c-b17a6fe12af2
+x
+java:S14815"0Remove this unused "daysOfMonth" local variable.(öÙÂıÿÿÿÿ8ò“şèõ1J$f6687068-416a-4116-b235-48558be953a2
+ƒ	java:S125:"<This block of commented-out lines of code should be removed.(Õ¹ÏËüÿÿÿÿ8¹¶…éõ1J$1f939f57-f437-47d4-9b34-01d12c441857
+z
+java:S1128"7Remove this unused import 'java.text.SimpleDateFormat'.(ú¡ÙÛ8º¶…éõ1J$56b8f064-893a-4023-9867-d8402f4015e2
+n
+java:S1128"+Remove this unused import 'java.util.Date'.(¸…¼ü8º¶…éõ1J$e6719e11-0f6a-4c29-b13a-42566e4d527c

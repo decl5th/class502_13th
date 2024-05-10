@@ -1,0 +1,9 @@
+
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ñç“É8‡Ê¯Şõ1J$88716b16-14f0-4e72-b260-ae47487f2334
+r	java:S106
+"+Replace this use of System.out by a logger.(Ùğóşÿÿÿÿ8Ê¯Şõ1J$2c696900-efb6-4b43-81f8-03879076fed0
+m	java:S106"+Replace this use of System.out by a logger.(˜³ø8‘Ê¯Şõ1J$060e1a6d-f67c-44a0-8de2-fb7486243fdf
+x
+java:S1128"5Remove this unused import 'java.time.OffsetDateTime'.(ûùˆı8’Ê¯Şõ1J$dc5b113e-0280-47a3-8d99-fd08223c45a6
+t
+java:S1128"1Remove this unused import 'java.time.ZoneOffset'.(ìÍÄË8“Ê¯Şõ1J$bc556a4e-fcc7-4546-8f9d-92dea2387c44

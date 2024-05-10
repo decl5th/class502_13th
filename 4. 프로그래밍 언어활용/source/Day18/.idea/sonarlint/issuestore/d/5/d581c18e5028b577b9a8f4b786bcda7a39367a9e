@@ -1,0 +1,18 @@
+
+Ÿ
+java:S1488R"\Immediately return this expression instead of assigning it to the temporary variable "days".(«åë¤8§Òá‡ö1J$fe39ada6-b18c-46a6-9213-2c3953bc5fdb
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¹éÊê8©Òá‡ö1J$03a0d6d1-71be-4a09-81f6-097c69f05c4d
+m	java:S106"+Replace this use of System.out by a logger.(°Ãïæ8«Óá‡ö1J$18664ba5-0c48-4ba3-87c3-ea4fe42e392f
+m	java:S106"+Replace this use of System.out by a logger.(ÉÉª8«Óá‡ö1J$be6e97a5-0360-411b-9959-70af9544df67
+r	java:S106"+Replace this use of System.out by a logger.(éÂ”„şÿÿÿÿ8¬Óá‡ö1J$6c34ca70-1b49-4f6a-97f3-4c2a8c1ab260
+r	java:S106"+Replace this use of System.out by a logger.(£³Çúÿÿÿÿ8¬Óá‡ö1J$55400c3a-af8e-48eb-bc37-a892402e3e7f
+l	java:S106!"+Replace this use of System.out by a logger.(á¢ÛJ8­Óá‡ö1J$1cd75f11-9de8-4f1c-8760-b0ed2bbc08bf
+m	java:S106#"+Replace this use of System.out by a logger.(×•œ²8­Óá‡ö1J$4461e8e9-7712-455d-8a70-8122a4fd6038
+r	java:S106("+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8­Óá‡ö1J$26e19264-b415-4b67-b8fe-1bc995e36d45
+r	java:S106+"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8åÈâ‡ö1J$3a3a938b-eea7-49ff-875d-e4994fef675a
+m	java:S106-"+Replace this use of System.out by a logger.(ˆÁº£8ÿÎâˆö1J$6273f42a-6a0f-489a-bb83-1d1fe74436e3
+ƒ	java:S125O"<This block of commented-out lines of code should be removed.(ü‹î¾ıÿÿÿÿ8ó©Ô‘ö1J$49412b88-84f9-4d33-9469-669661678f3e
+w
+java:S1128"/Remove this unused import 'java.time.Duration'.(ëá¯‰üÿÿÿÿ8°Óá‡ö1J$19e748c6-f367-4ba7-9973-afceabb56671
+u
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8°Óá‡ö1J$8562a3fe-ae05-44aa-870c-d69ac655da62
