@@ -1,0 +1,14 @@
+
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¶Á÷œ8 Ûà‡÷1J$3051bedc-0926-49ad-9a8f-897a5c3ec405
+ƒ
+java:S1854";Remove this useless assignment to local variable "result2".(õäÓÿÿÿÿÿ8£Ûà‡÷1J$5f496c3c-7497-4df8-9ccc-5bcc4f754246
+{
+java:S1854"8Remove this useless assignment to local variable "cal2".(´ï¶¨8£Ûà‡÷1J$a2af5da4-5722-4b33-83bf-25b6a39ceacd
+~	java:S125"<This block of commented-out lines of code should be removed.(ëá´µ8×Áì‡÷1J$f7025df5-cf01-4bad-887d-959a93ae1b5e
+r	java:S106"+Replace this use of System.out by a logger.(›êŞÂúÿÿÿÿ8¦Ûà‡÷1J$945993c6-3474-4a15-97e5-7e3060d80983
+~	java:S125"<This block of commented-out lines of code should be removed.(•´¾8Ñ§ï‡÷1J$092a21c1-3515-4be7-bfbc-23812d9e423e
+l
+java:S1481")Remove this unused "cal2" local variable.(´ï¶¨8•…ï‡÷1J$166c6d8a-794b-4625-8225-6ef040d5cdb5
+t
+java:S1481",Remove this unused "result2" local variable.(õäÓÿÿÿÿÿ8¨Ûà‡÷1J$3fff0371-d370-4f1f-8480-6d2b05eaac28
+r	java:S106"+Replace this use of System.out by a logger.(›êŞÂúÿÿÿÿ8©Ûà‡÷1J$a4eb8ad0-fd12-4af1-a68e-63464c400e65

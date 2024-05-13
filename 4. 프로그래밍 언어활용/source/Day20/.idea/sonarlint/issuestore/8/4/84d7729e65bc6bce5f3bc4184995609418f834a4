@@ -1,0 +1,5 @@
+
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ñç“É8‚Çž„÷1J$e90a6482-3372-430b-89d3-aa8b672b2cd7
+m	java:S106"+Replace this use of System.out by a logger.(ºùÆÉ8œÇž„÷1J$83909f92-e0bf-4303-b82b-9a7a3f0a7a6e
+y
+java:S1128"6Remove this unused import 'java.io.InputStreamReader'.(ãˆÎÉ8Ý•®„÷1J$1496cfec-622f-400e-96ec-540c316b3add
