@@ -1,0 +1,6 @@
+
+•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ñç“ÉJ$c2dbfd28-2d60-4fb4-b81e-cfd1f395b2c3
+‰
+java:S2259"AA "NullPointerException" could be thrown; "str" is nullable here.(·çâùÿÿÿÿ8¬ˆÒş÷1J$8f1d8ae5-3a5c-4867-b9bc-89321387f805
+w
+java:S2201"/The return value of "toUpperCase" must be used.(·çâùÿÿÿÿ8±ˆÒş÷1J$8501784e-7cd7-4b20-a8c3-e0e992a427dd
