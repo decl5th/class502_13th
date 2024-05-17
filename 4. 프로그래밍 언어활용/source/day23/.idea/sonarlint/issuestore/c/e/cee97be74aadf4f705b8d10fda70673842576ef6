@@ -1,0 +1,11 @@
+
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ñç“É8¬µ‰¬ø1J$a5f0c87d-9925-4c86-a46d-d9476ecc3bc7
+š
+java:S1450"WRemove the "autoSave" field and declare it as a local variable in the relevant methods.(¨ÀÃ8ÍÎ¬ø1J$0a11aaa3-a67c-48da-a01b-7e3a06d61b97
+¦
+java:S2142"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(‚¦¡ûûÿÿÿÿ8¶µ‰¬ø1J$08b213ed-58d1-4690-915e-d14c3192b76b
+p	java:S108")Either remove or fill this block of code.(‚¦¡ûûÿÿÿÿ8¸µ‰¬ø1J$2b0c6b43-4f96-4f72-b9f2-a93065daa20e
+m	java:S106"+Replace this use of System.out by a logger.(ûÑÔ8¹µ‰¬ø1J$d7192706-177f-41fd-a4ee-882e0fdc73cf
+r	java:S106"+Replace this use of System.out by a logger.(´‹¹öşÿÿÿÿ8Ï¬ø1J$4bab95c7-917a-4a05-b04d-240999cfa0a5
+o
+java:S1068",Remove this unused "autoSave" private field.(¨ÀÃ8»µ‰¬ø1J$01b6aa25-46d3-461a-9cf7-fcd0b6d42d09

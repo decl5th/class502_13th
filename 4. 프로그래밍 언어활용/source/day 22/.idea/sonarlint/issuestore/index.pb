@@ -9,8 +9,6 @@ D
 src/exam01/Ex03.java,8\b\8b59dc4c06bc16fb3faab6fc73cf54913a8dcbd7
 D
 src/exam01/Ex04.java,8\4\84d7729e65bc6bce5f3bc4184995609418f834a4
-9
-	Ex05.java,d\3\d32fdf14c7dcc1670467ffeb928ca83160b41241
 D
 src/exam01/Ex05.java,d\c\dcd0fbe336ed1c71e72b514dee093121e2251f80
 D
@@ -27,7 +25,5 @@ D
 src/exam02/Ex02.java,7\2\720c6920f902a4c5cb7691727d7ddeb827242a6f
 D
 src/exam02/Ex03.java,7\d\7ddf6fb394e81ffa46c214940d7e0fe479a9370d
-D
-src/exam02/Ex11.java,3\e\3ec18d276307bbf44c9bed8e52781548d46519ab
 D
 src/exam02/Ex04.java,8\1\8161fce061a9e14b230e2eacd1984016210adb8b

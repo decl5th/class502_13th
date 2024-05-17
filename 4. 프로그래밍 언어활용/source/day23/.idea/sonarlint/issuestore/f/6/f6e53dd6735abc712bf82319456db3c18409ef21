@@ -1,0 +1,9 @@
+
+Ž	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÀÐÇH8–«ú¨ø1J$7ff1f70a-5cf5-4f74-8196-c7accfd053b5
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ñç“É8™«ú¨ø1J$68db13b5-a116-48f3-9676-b52f29b9603e
+l	java:S106"+Replace this use of System.out by a logger.(”Ï„8 «ú¨ø1J$ac5f909e-0614-4993-84d7-cd1452704cd1
+~	java:S125"<This block of commented-out lines of code should be removed.(„À¥Ç8£«ú¨ø1J$3f7741ed-f695-45c6-ae77-4f29c5b541f1
+m	java:S106"+Replace this use of System.out by a logger.(Ç©­ù8¤«ú¨ø1J$4c860e3b-d965-4315-8740-4963203be3fc
+}
+java:S1161":Add the "@Override" annotation above this method signature(“–ýþ8¦«ú¨ø1J$de99d6b0-ee9b-4691-bdc4-2f56ffc64731
+m	java:S106"+Replace this use of System.out by a logger.(ó¾ä²8¦«ú¨ø1J$98cc1c23-50b1-4f16-829e-8aabf3e9e513
