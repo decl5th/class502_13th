@@ -1,0 +1,9 @@
+
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ñç“É8µ±§ù1J$cba08b32-e28c-42af-b1ad-e99885acacd9
+
+java:S2681"|This line will not be executed in a loop; only the first line of this 2-line block will be. The rest will execute only once.(¹Ş±•üÿÿÿÿ8ô¿§ù1
+{
+java:S2142"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(íÌ‚î8—ô¿§ù1
+m	java:S106
+"+Replace this use of System.out by a logger.(ÔÚ¾´8¼±§ù1J$944f98f2-d138-4eb9-a9cd-34071091d075
+L	java:S106"+Replace this use of System.out by a logger.(±è¥ìşÿÿÿÿ8šô¿§ù1
