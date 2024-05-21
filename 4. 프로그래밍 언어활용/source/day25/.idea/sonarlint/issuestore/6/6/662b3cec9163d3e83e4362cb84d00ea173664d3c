@@ -1,0 +1,7 @@
+
+•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ρη“ΙJ$8f84d980-7e25-4d71-8d83-64d9fc34c087
+{
+java:S2142"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(δ Ή€8‘Δ°Òω1
+e
+java:S2276"CReplace the call to "Thread.sleep(...)" with a call to "wait(...)".(»γίΊψÿÿÿÿ8“Δ°Òω1
+E	java:S108")Either remove or fill this block of code.(δ Ή€8–Δ°Òω1

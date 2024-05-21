@@ -1,11 +1,11 @@
 
-œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ñç“É8íóî¥ù1J$8c6c044a-f474-44be-9054-9cce5ea3cf8e
-r	java:S106"+Replace this use of System.out by a logger.(¹¦Ô„ÿÿÿÿÿ8÷óî¥ù1J$62347226-106b-45dc-aeb2-9afbd5c7ff39
-m	java:S106"+Replace this use of System.out by a logger.(òËÔ¨8øóî¥ù1J$b0960992-e105-4727-a919-f3047c775ae4
-r	java:S106"+Replace this use of System.out by a logger.(ÙûÒıÿÿÿÿ8ùóî¥ù1J$1512a689-9046-4084-bef2-23e8e1a06b17
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ñç“É8íóî¥ù1J$e851a268-263c-40f1-aeed-93bad6d2d127
+r	java:S106"+Replace this use of System.out by a logger.(¹¦Ô„ÿÿÿÿÿ8÷óî¥ù1J$0020904a-1b2c-4e05-b2a8-6dee7dfaa2af
+m	java:S106"+Replace this use of System.out by a logger.(òËÔ¨8øóî¥ù1J$1bd40d3c-0484-47d0-b104-23fcb0643a6d
+r	java:S106"+Replace this use of System.out by a logger.(ÙûÒıÿÿÿÿ8ùóî¥ù1J$5f95453c-9f63-4bcf-ae64-8565a2410327
 ¦
-java:S2142""^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(–Ö‚¹ÿÿÿÿÿ8úóî¥ù1J$418e2ee3-87a2-4e6e-8e04-fbe2951c7cdc
-p	java:S108"")Either remove or fill this block of code.(–Ö‚¹ÿÿÿÿÿ8ûóî¥ù1J$d8a2e3bc-d1ae-444b-8246-c6b3bab04363
+java:S2142""^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(–Ö‚¹ÿÿÿÿÿ8úóî¥ù1J$1172e9d8-b697-470d-85fc-59cef1681f76
+p	java:S108"")Either remove or fill this block of code.(–Ö‚¹ÿÿÿÿÿ8ûóî¥ù1J$ee054a67-5a18-4441-bfe2-dfc89d8d511a
 d
-java:S1116""Remove this empty statement.(–Ö‚¹ÿÿÿÿÿ8üóî¥ù1J$47b3ea35-fe9e-4da5-8dee-5ad0cf263837
-r	java:S106$"+Replace this use of System.out by a logger.(›ÂĞ¹úÿÿÿÿ8üóî¥ù1J$d5f50395-16bd-41d4-ad29-ebc2912b6120
+java:S1116""Remove this empty statement.(–Ö‚¹ÿÿÿÿÿ8üóî¥ù1J$33326bed-77a3-4d7b-873d-958b42add58d
+r	java:S106$"+Replace this use of System.out by a logger.(›ÂĞ¹úÿÿÿÿ8üóî¥ù1J$d6f45a17-f343-4746-af2d-b5a6a03221b1

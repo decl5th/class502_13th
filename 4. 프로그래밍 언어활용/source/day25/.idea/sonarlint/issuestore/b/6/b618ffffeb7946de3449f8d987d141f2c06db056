@@ -1,0 +1,6 @@
+
+•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ñç“ÉJ$1c37e836-1fcf-4f93-a52a-5173fb5468d6
+K
+java:S2140
+")Use "java.util.Random.nextInt()" instead.(ÌÌ±Úÿÿÿÿÿ8ƒ©²Òù1
+L	java:S106"+Replace this use of System.out by a logger.(¶àÄñþÿÿÿÿ8†©²Òù1
