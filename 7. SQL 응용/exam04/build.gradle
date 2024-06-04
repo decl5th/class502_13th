@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.choongang'
+version = '1.0-SNAPSHOT'
+
+sourceCompatibility = 17 // 자바 버전
+
+//lombok에 대한 버전 언급 전역변수
+ext {
+    lbversion = '1.18.32'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    def version = '1.18.32'
+    compileOnly "org.projectlombok:lombok:$version"
+    testCompileOnly "org.projectlombok:lombok:$version"
+    annotationProcessor "org.projectlombok:lombok:$version"  // main 구간 lombok 적용
+    testAnnotationProcessor  "org.projectlombok:lombok:$version" // test구간에 대한 lombok 적용
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
