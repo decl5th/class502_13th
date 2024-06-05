@@ -91,16 +91,11 @@ public class JoinServiceTest {
                 }
                 /* 약관 동의 검증 D */
         );
-
-
-
-
     }
-
     void requiredFieldEachTest(RequestJoin form, String keyword) {
         ValidationException thrown = assertThrows(ValidationException.class, () -> {
             joinService.process(form);
-        });
+        }, keyword + " 오류!");
 
         String message = thrown.getMessage(); // 발생한 예외 메세지
         assertTrue(message.contains(keyword));
