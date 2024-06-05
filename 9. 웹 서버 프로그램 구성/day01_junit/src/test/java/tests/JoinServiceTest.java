@@ -126,5 +126,6 @@ public class JoinServiceTest {
 
         // 조회한 회원 데이터 email과 getData()로 생성한 email이 일치하는 지 체크
         // assertEquals(...)
+        // 주석
     }
 }
