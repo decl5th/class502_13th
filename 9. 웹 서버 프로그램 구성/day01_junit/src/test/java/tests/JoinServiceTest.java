@@ -1,0 +1,31 @@
+package tests;
+
+import member.controllers.RequestJoin;
+import member.services.JoinService;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+@DisplayName("회원가입기능 테스트")
+public class JoinServiceTest {
+    @Test
+    @DisplayName("회원가입 성공시 예외 발생 없음")
+    void successTest() {
+        assertDoesNotThrow(() -> {
+            JoinService service = new JoinService();
+            RequestJoin form = RequestJoin.builder().build();
+            service.process(form);
+        });
+    }
+
+    @Test
+    @DisplayName("필수항목(이메일, 비번, 비번확인, 회원명) 검증, 검증 실패시 ValidationException이 발생")
+    void requiredFieldTest() {
+        assertThrows(IllegalArgumentException.class, () -> {
+            JoinService service = new JoinService();
+            RequestJoin form = RequestJoin.builder().build();
+            service.process(form);
+        });
+    }
+
+}
