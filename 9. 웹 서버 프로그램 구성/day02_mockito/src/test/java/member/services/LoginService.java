@@ -1,5 +1,6 @@
 package member.services;
 
+import global.Mailer;
 import global.exceptions.ValidationException;
 import global.validators.Validator;
 import jakarta.servlet.http.HttpServletRequest;
@@ -9,10 +10,15 @@ public class LoginService {
     // private LoginValidator valiator = new LoginValidator(); 개방 폐쇄의 원칙을 따라서 다르게 표현
 
     private Validator<HttpServletRequest> valiator; // 역전 의존 법칙 적용
+    private Mailer mailer;
 
     public LoginService(Validator<HttpServletRequest> valiator) {
         this.valiator = valiator;
 
+    }
+
+    public void setMailer(Mailer mailer) {
+        this.mailer = mailer;
     }
 
     public void process(HttpServletRequest request) {
@@ -28,5 +34,13 @@ public class LoginService {
          */
 
         valiator.check(request);
+
+        // 로그인 성공 가정
+        // 성공시 메일 전송
+        if (mailer != null) {
+           String email = request.getParameter("email");
+           mailer.send(email);
+
+        }
     }
 }
