@@ -7,7 +7,10 @@ import member.services.LoginService;
 import member.validators.LoginValidator;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.ArgumentCaptor;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.Locale;
 
@@ -17,21 +20,27 @@ import static org.mockito.BDDMockito.then;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.only;
 
+
+@ExtendWith(MockitoExtension.class)
 public class Ex02Test {
 
     private LoginService loginService;
+
+    @Mock // 모의 객체 자동 생성
     private Mailer mailer;
     private Faker faker;
+
+    @Mock
     private HttpServletRequest request;
 
     @BeforeEach
     void init() {
         loginService = new LoginService(new LoginValidator());
-        mailer = mock(Mailer.class);
+       // mailer = mock(Mailer.class);
         faker = new Faker(Locale.ENGLISH);
 
         loginService.setMailer(mailer);
-        request = mock(HttpServletRequest.class); // 가짜 객체 생성
+      //  request = mock(HttpServletRequest.class); // 가짜 객체 생성
 
         // Stub 추가
         given(request.getParameter("email")).willReturn(faker.internet().emailAddress());
@@ -54,6 +63,7 @@ public class Ex02Test {
         // 메일을 제대로 보냈는지에 대한 확인 절차 혹여나 메일을 다르게 입력하지는 않았는지, 송수신 메일을 바꿔서 입력하지는 않았는지
         loginService.setMailer(mailer);
         loginService.process(request);
+
         String email = request.getParameter("email"); // 실제로 입력해서 보낸 메일 주소
 
         // 캡쳐할려는 매개변수의 자료형을 입력
