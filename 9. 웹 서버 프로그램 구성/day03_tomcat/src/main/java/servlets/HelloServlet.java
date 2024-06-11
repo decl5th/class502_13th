@@ -19,11 +19,28 @@ public class HelloServlet extends HttpServlet {
 
         //System.out.println("안녕하세요~!");
         System.out.println("doGet출력");
-    }
 
+        String common1 = req.getServletContext().getInitParameter("common1");
+        System.out.println(common1);
+    }
+    /*
     @Override
     public void init() throws ServletException {
         System.out.println("init출력");
+    }
+     */
+
+    @Override
+    public void init(ServletConfig config) throws ServletException {
+        // HelloServlet만 조회 가능
+        String key1 = config.getInitParameter("key1");
+        String key2 = config.getInitParameter("key2");
+        System.out.printf("key1 = %s, key2 = %s%n", key1, key2);
+
+        // 모든 서블릿이 조회 가능
+        String common1 = config.getServletContext().getInitParameter("common1");
+        String common2 = config.getServletContext().getInitParameter("common2");
+        System.out.printf("common1 = %s, common2 = %s%n", common1, common2);
     }
 
     @Override
