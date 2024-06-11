@@ -39,7 +39,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>join-servlet</servlet-name>
-        <url-pattern>/join</url-pattern>
+        <url-pattern>join</url-pattern>
     </servlet-mapping>
 
 </web-app>
