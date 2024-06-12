@@ -17,7 +17,7 @@
     </servlet-mapping>
 -->
 
-
+    <!-- 강의에서 애너테이션으로 정의하는 방법 ㄱㄱ
     <filter>
         <filter-name>board-filter</filter-name>
         <filter-class>filters.BoardFilter</filter-class>
@@ -35,6 +35,7 @@
         <filter-name>board2-filter</filter-name>
         <url-pattern>/board</url-pattern>
     </filter-mapping>
+    -->
 
     <filter>
         <filter-name>common-filter</filter-name>
