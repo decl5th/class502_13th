@@ -7,8 +7,7 @@ import org.junit.jupiter.api.Order;
 import java.io.IOException;
 
 
-@WebFilter("/board/*")
-@Order(2)
+
 public class Board2Filter implements Filter {
 
     @Override

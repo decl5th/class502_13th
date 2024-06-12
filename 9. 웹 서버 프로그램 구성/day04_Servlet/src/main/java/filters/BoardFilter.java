@@ -6,9 +6,7 @@ import org.junit.jupiter.api.Order;
 
 import java.io.IOException;
 
-
-@WebFilter("/board/*")
-@Order(1)
+//@WebFilter("/board/*")
 public class BoardFilter implements Filter {
    // 요청과 응답 사이에서 걸러주는 기능
     @Override
