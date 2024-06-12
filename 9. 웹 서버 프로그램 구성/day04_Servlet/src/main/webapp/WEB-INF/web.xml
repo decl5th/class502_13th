@@ -6,7 +6,7 @@
                       https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
          version="6.0"
          >
-
+<!--
     <servlet>
         <servlet-name>member-servlet</servlet-name>
         <servlet-class>controllers.MemberController</servlet-class>
@@ -15,5 +15,6 @@
         <servlet-name>member-servlet</servlet-name>
         <url-pattern>/member/*</url-pattern>
     </servlet-mapping>
+-->
 
 </web-app>
