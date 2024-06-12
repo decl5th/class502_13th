@@ -6,11 +6,18 @@
     <button type='submit'>작성하기</button>
 </form>
 
- <%-- 지역 변수로 들어감 --%>
+ <%-- 지역 변수(=내장 객체)로 들어감 --%>
 <%
     int num1 = 100;
     int num2 = 200;
-
+    //int result = num1 + num2;
+     int result = add(num1, num2);
+     System.out.println(result);
+     /*
+         int minus(int num1, int num2) {
+             return num1 - num2;
+         }
+     */
 %>
 
  <%-- 인스턴스 변수로 들어감 --%>
@@ -18,6 +25,7 @@
 
     int num1 = 10;
     int num2 = 20;
+
     int add(int num1, int num2) {
         return num1 + num2;
     }
