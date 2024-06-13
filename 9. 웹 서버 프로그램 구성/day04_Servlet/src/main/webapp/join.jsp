@@ -20,7 +20,7 @@
 
 <%-- 선언문 --%>
 <%!
- // 클래스명 바로 아래쪽 - 멤버 변수
+ // 클래스명 바로 아래쪽 - 멤버 변수 재확인
     String name = "이이름";
     void print() {
         System.out.println(name);
