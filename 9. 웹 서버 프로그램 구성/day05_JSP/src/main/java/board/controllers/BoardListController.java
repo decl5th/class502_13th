@@ -15,11 +15,12 @@ import java.util.List;
 @WebServlet("/board/list/*")
 public class BoardListController extends HttpServlet {
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         BoardInfoService service = new BoardInfoService();
         List<BoardData> items = service.getList();
 
+        // 속성을 통해서 view로 넘겨주기 위해 속성을 set을 통해 설정
         req.setAttribute("items", items);
 
         RequestDispatcher rd = req.getRequestDispatcher("/WEB-INF/templates/board/list.jsp");
