@@ -4,6 +4,7 @@
     for (Cookie cookie : cookies) {
         String name = cookie.getName();
         String value = cookie.getValue();
+
         System.out.printf("name:%s, value:%s%n", name, value);
     }
 %>
