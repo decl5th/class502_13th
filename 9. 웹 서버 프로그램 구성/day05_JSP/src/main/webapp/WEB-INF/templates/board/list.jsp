@@ -1,5 +1,7 @@
 <%@ page contentType="text/html; charset=UTF-8" %>
 <%@ taglib prefix="c" uri="jakarta.tags.core" %>
+<%@ taglib prefix="layout" tagdir="/WEB-INF/tags/layouts" %>
+<layout:main title="게시글 목록">
 <h1>게시글 목록</h1>
 
 <%--items는 속성명이고 $안에 있는 items는 리스트값인데 그 리스트 값이 var에 담겨서 카운트되어 반복 출력--%>
@@ -14,3 +16,4 @@
     </li>
 </c:forEach>
 </ul>
+</layout:main>

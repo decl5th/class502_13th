@@ -27,6 +27,11 @@ public class BoardListController extends HttpServlet {
         // request 객체를 통해서 setAttribute로 설정
         req.setAttribute("items", items);
 
+        // 페이지마다 다른 스타일 존재 이렇게 속성은 레이아웃 쪽에서 접근 가능해짐 -> css, js 동적으로 추가
+        req.setAttribute("addCss", new String[] {"board/style", "board/list"});
+        req.setAttribute("addScript", List.of("board/common", "board/list"));
+
+        // 속성 설정은 RequestDispatcher 상단에 정의 why? > 출력 완료 되면 속성은 반영 X
         // 버퍼를 교체할건데 forward를 통해서 어디서?
         // request객체에 있는 getRequestDispatcher가지고 가져와서 forwarding 버퍼를 치환하면 됨
         // jsp파일의 경로를 입력해주면 그 경로로 치환됨 == view를 보여줌
