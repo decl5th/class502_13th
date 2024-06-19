@@ -32,6 +32,6 @@ public class MemberServiceProvider {
     // 조립 필요함 계속해서 추가될거고 그렇게 추가하면 소스를 보여줄 필요없이 객체 통제가 원할
     // 개방 폐쇄의 원칙이 잘 적용된다
     public JoinService joinService() {
-        return new JoinService(joinValidator());
+        return new JoinService(joinValidator(), memberMapper());
     }
 }

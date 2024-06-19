@@ -1,12 +1,14 @@
 package org.choongang.member.tests;
 
 import com.github.javafaker.Faker;
+import org.choongang.global.configs.DBConn;
 import org.choongang.global.exceptions.BadRequestException;
 import org.choongang.member.controllers.RequestJoin;
+import org.choongang.member.entities.Member;
 import org.choongang.member.exceptions.DuplicatedMemberException;
+import org.choongang.member.mapper.MemberMapper;
 import org.choongang.member.services.JoinService;
 import org.choongang.member.services.MemberServiceProvider;
-import org.choongang.member.validators.JoinValidator;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -22,10 +24,12 @@ import static org.junit.jupiter.api.Assertions.*;
 public class JoinServiceTest {
 
     private JoinService service;
+    private MemberMapper mapper;
 
     @BeforeEach
     void init() {
         service = MemberServiceProvider.getInstance().joinService(); // 그래서 여기서 객체 생성해주도록 함 더 나가 완성된 객체를 가져오도록 함
+        mapper = DBConn.getSession().getMapper(MemberMapper.class);
     }
 
     //회원데이터 필요할 때마다 조회 , faker을 이용하여 데이터를 생성합니다.
@@ -47,10 +51,15 @@ public class JoinServiceTest {
     @Test
     @DisplayName("회원가입 성공시 예외가 발생하지 않음")
     void successTest() {
+        RequestJoin form = getData();
         assertDoesNotThrow(() -> {
             //JoinService service = new JoinService(); // 매번 테스트마다 객체 생성 번거로움
-            service.process(getData());
+            service.process(form);
         });
+
+        // 가입된 이메일로 회원이 조회되는지 체크
+        Member member = mapper.get(form.getEmail());
+        assertEquals(form.getEmail(), member.getEmail());
     }
 
     @Test
@@ -146,11 +155,12 @@ public class JoinServiceTest {
     // 회원 중복에 대한 경우 검증
     void duplicateEmailTest() {
         // 문구는 고정이니까 체크할 필요없고 예외만 체크
+        MemberServiceProvider provider = MemberServiceProvider.getInstance();
         assertThrows(DuplicatedMemberException.class, () -> {
             RequestJoin form = getData();
-            service.process(form);
+            provider.joinService().process(form);
             // 한번 더 가입시키면 예외 발생
-            service.process(form);
+            provider.joinService().process(form);
         });
     }
 }
