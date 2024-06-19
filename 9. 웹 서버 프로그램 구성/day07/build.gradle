@@ -11,6 +11,8 @@ repositories {
 }
 
 dependencies {
+    implementation 'org.mindrot:jbcrypt:0.4'
+
     compileOnly 'jakarta.servlet:jakarta.servlet-api:6.0.0'
     testCompileOnly 'jakarta.servlet:jakarta.servlet-api:6.0.0'
 
