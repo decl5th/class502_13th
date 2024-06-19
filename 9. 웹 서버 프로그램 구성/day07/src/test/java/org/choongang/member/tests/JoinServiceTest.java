@@ -29,7 +29,7 @@ public class JoinServiceTest {
     @BeforeEach
     void init() {
         service = MemberServiceProvider.getInstance().joinService(); // 그래서 여기서 객체 생성해주도록 함 더 나가 완성된 객체를 가져오도록 함
-        mapper = DBConn.getSession().getMapper(MemberMapper.class);
+        mapper = DBConn.getSession().getMapper(MemberMapper.class); // 이 mapper와 밑의 duplicated 테스트 mapper는 다름
     }
 
     //회원데이터 필요할 때마다 조회 , faker을 이용하여 데이터를 생성합니다.
@@ -155,10 +155,15 @@ public class JoinServiceTest {
     // 회원 중복에 대한 경우 검증
     void duplicateEmailTest() {
         // 문구는 고정이니까 체크할 필요없고 예외만 체크
-        MemberServiceProvider provider = MemberServiceProvider.getInstance();
+         MemberServiceProvider provider = MemberServiceProvider.getInstance();
+        // 새 객체를 받아오게 되면서 exist 1이 되면 중복값이 있다는 거니까 exception 발생
         assertThrows(DuplicatedMemberException.class, () -> {
             RequestJoin form = getData();
+            //service.process(form); // exist 값이 0 출력
+            //service.process(form);
+            // 똑같이 exist가 0 출력 왜? -> joinValiator 에서 기존의 0의 값이 유지가 됨 그럼 중복된 값이 있는데 없다고 말하는거라 무결성이 뜨는 거임
             provider.joinService().process(form);
+
             // 한번 더 가입시키면 예외 발생
             provider.joinService().process(form);
         });
