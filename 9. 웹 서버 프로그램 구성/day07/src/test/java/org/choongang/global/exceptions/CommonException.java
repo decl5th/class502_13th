@@ -14,4 +14,9 @@ public class CommonException extends RuntimeException {
         super(message);
         this.status = status;
     }
+
+    // 응답코드를 조회하기 위한 get메서드 정의
+    public int getStatus() {
+        return status;
+    }
 }
