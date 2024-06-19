@@ -17,15 +17,12 @@ public class JoinService {
     //DB 쿼리에 대한 의존성 추가
     private MemberMapper mapper; // 구성(composition)을 통한 기능 확장
 
+    // 생성자를 넣어서 개방폐쇄의 원칙을 적용
     public JoinService(Validator<RequestJoin> validator, MemberMapper mapper) {
         this.validator = validator;
         this.mapper = mapper;
     }
 
-    // 생성자를 넣어서 개방폐쇄의 원칙을 적용
-    public JoinService(Validator<RequestJoin> validator) {
-        this.validator = validator;
-    }
 
     public void process(RequestJoin form) {
        // 유효성 검사 담당 검사를 실패했을 땐 예외가 던져진다 예외가 던져지지 않으면 검증 성공!
@@ -38,7 +35,7 @@ public class JoinService {
         member.setEmail(form.getEmail());
         member.setPassword(hash);
         member.setUserName(form.getUserName());
-        // 이 값(암호화한 비번 및 회원정보)으로 회원 등록
+        // 이 값(암호화한 비번 및 회원정보)으로 회원 등록 및 그에 대한 예외 처리
         int result = mapper.register(member);
         if (result < 1) {
             throw new BadRequestException("회원가입에 실패하였습니다.");
