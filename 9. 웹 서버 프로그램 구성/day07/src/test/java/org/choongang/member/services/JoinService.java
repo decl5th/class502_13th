@@ -1,14 +1,23 @@
 package org.choongang.member.services;
 
-import org.choongang.global.exceptions.BadRequestException;
+
 import org.choongang.global.validators.Validator;
 import org.choongang.member.controllers.RequestJoin;
+import org.choongang.member.mapper.MemberMapper;
 
 // 회원가입 기능
 public class JoinService {
 
     // 의존성 역전원칙로 검증 예
     private Validator<RequestJoin> validator;
+
+    //DB 쿼리에 대한 의존성 추가
+    private MemberMapper mapper; // 구성(composition)을 통한 기능 확장
+
+    public JoinService(Validator<RequestJoin> validator, MemberMapper mapper) {
+        this.validator = validator;
+        this.mapper = mapper;
+    }
 
     // 생성자를 넣어서 개방폐쇄의 원칙을 적용
     public JoinService(Validator<RequestJoin> validator) {
