@@ -98,4 +98,50 @@ public class JoinServiceTest {
         String message = thrown.getMessage();
         assertTrue(message.contains(keyword), field + "키워드 테스트");
     }
+
+    @Test
+    @DisplayName("비밀번호와 확인이 일치하지 않으면 BadRequestException 발생")
+    void passwordMismatchTest() {
+        BadRequestException thrown = assertThrows(BadRequestException.class, () -> {
+            RequestJoin form = getData();
+            form.setConfirmPassword(form.getPassword() + "**");
+            service.process(form);
+        });
+        String message = thrown.getMessage();
+        assertTrue(message.contains("비밀번호가 일치하지"));
+    }
+
+    @Test
+    @DisplayName("이메일이 형식에 맞지 않으면 BadRequestException 발생")
+    void emailPatternTest() {
+        BadRequestException thrown = assertThrows(BadRequestException.class, () -> {
+            RequestJoin form = getData();
+            form.setEmail("*******");
+            service.process(form);
+        });
+
+        String message = thrown.getMessage();
+        assertTrue(message.contains("이메일 형식이"));
+    }
+
+    @Test
+    @DisplayName("비밀번호 자리수가 8자리 미만이면 BadRequestException 발생")
+    void passwordLengthTest() {
+        BadRequestException thrown = assertThrows(BadRequestException.class, () -> {
+           Faker faker = new Faker();
+           RequestJoin form = getData();
+
+           form.setPassword(faker.regexify("\\w{3,7}").toLowerCase());
+            // 3 자리에서 7자리 문자(대소문자 포함= w)
+           form.setConfirmPassword(form.getPassword());
+           service.process(form);
+        });
+        String message = thrown.getMessage();
+        assertTrue(message.contains("8자리 이상"));
+    }
+
+    @Test
+    @DisplayName("이미 가입된 메일인 경우 DuplicateEmailException 발생")
+    // 회원 중복에 대한 경우 검증
+    void duplicateEmailTest() {}
 }

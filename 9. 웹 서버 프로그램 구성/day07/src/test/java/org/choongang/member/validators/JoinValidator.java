@@ -1,6 +1,7 @@
 package org.choongang.member.validators;
 
 import org.choongang.global.exceptions.BadRequestException;
+import org.choongang.global.validators.EmailValidator;
 import org.choongang.global.validators.RequiredValidator;
 import org.choongang.global.validators.Validator;
 import org.choongang.member.controllers.RequestJoin;
@@ -8,7 +9,7 @@ import org.choongang.member.controllers.RequestJoin;
 
 // RequestJoin을 검증하는 joinValidator
 // joinService내에서 joinValidator를 사용하겠다
-public class JoinValidator implements Validator<RequestJoin>, RequiredValidator {
+public class JoinValidator implements Validator<RequestJoin>, RequiredValidator, EmailValidator {
 
     @Override
     public void check(RequestJoin form) {
@@ -27,5 +28,17 @@ public class JoinValidator implements Validator<RequestJoin>, RequiredValidator 
         checkRequired(userName, new BadRequestException("회원명를 입력하세요."));
         // checktrue 생성하고나서 추가됨 왜? boolean값이라서
         checkTrue(termsAgree, new BadRequestException("약관에 동의하세요."));
+
+        // 비번, 비번 확인 일치 여부
+        checkTrue(password.equals(confirmPassword), new BadRequestException("비밀번호가 일치하지 않습니다."));
+
+        // 이메일 형식 체크는 어디서든 쓸수 있는 양식이라 global에다 따로 빼서 작성해서 가져오는 식으로 설정
+        if (!checkEmail(email)) {
+            throw new BadRequestException("이메일 형식이 아닙니다.");
+        }
+
+        // 비번 자리수 체크
+        checkTrue(password.length() >= 8, new BadRequestException("비밀번호는 8자리 이상 입력하세요"));
+
     }
 }
