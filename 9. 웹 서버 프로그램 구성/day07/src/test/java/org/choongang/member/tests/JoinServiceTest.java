@@ -56,10 +56,46 @@ public class JoinServiceTest {
     @DisplayName("필수 입력항목(이메일, 비밀번호, 비번 확인, 회원명, 약관 동의) 검증, 검증 실패시 BadRequestException 발생")
     // 입력 데이터와 예외처리에 대한 내용이 필요
     void requiredFieldTest() {
-        assertThrows(BadRequestException.class, () -> {
-           RequestJoin form = getData();
-           form.setEmail(null);
-           service.process(form);
-        });
+        assertAll(
+                // 이메일 검증
+                () -> requiredEachFieldTest("email", true, "이메일"),
+                () -> requiredEachFieldTest("email", false, "이메일"),
+                // 비번 검증
+                () -> requiredEachFieldTest("password", true, "비밀번호"),
+                () -> requiredEachFieldTest("password", false, "비밀번호"),
+                () -> requiredEachFieldTest("confirmPassword", true, "비밀번호를 확인"),
+                () -> requiredEachFieldTest("confirmPassword", false, "비밀번호를 확인"),
+                // 회원명 검증
+                () -> requiredEachFieldTest("userName", true, "회원명"),
+                () -> requiredEachFieldTest("userName", false, "회원명"),
+                // 약관 동의 검증
+                () -> requiredEachFieldTest("termsAgree", false, "약관")
+        );
+    }
+
+    // 각각의 필드를 테스트할 수 있는 메서드 정의
+    // field 데이터 체크
+    // 메세지에 지정한 keyword 값이 포함되어 있는지 까지 체크
+    // null값이 들어갔는지에 대해서 체크
+    void requiredEachFieldTest(String field, boolean isNull, String keyword) {
+        BadRequestException thrown = assertThrows(BadRequestException.class, () -> {
+            RequestJoin form = getData();
+            if (field.equals("email")) {
+                form.setEmail(isNull ? null : "      ");
+            } else if (field.equals("password")) {
+                form.setPassword(isNull ? null : "      ");
+            } else if (field.equals("confirmPassword")) {
+                form.setConfirmPassword(isNull ? null : "      ");
+            } else if (field.equals("userName")) {
+                form.setUserName(isNull ? null : "      ");
+            } else if (field.equals("termsAgree")) {
+                form.setTermsAgree(false);
+            }
+            service.process(form);
+        }, field + "테스트");
+
+        // 메세지에 키워드가 포함되어 있는지 확인
+        String message = thrown.getMessage();
+        assertTrue(message.contains(keyword), field + "키워드 테스트");
     }
 }

@@ -6,4 +6,11 @@ public interface RequiredValidator {
             throw e;
         }
     }
+
+    // 체크된 상태(참)가 아니면 예외를 던지겠다
+    default void checkTrue (boolean checked, RuntimeException e) {
+        if(!checked) {
+            throw e;
+        }
+    }
 }
