@@ -43,7 +43,9 @@ public class LoginServiceTest {
                         .email(System.currentTimeMillis() + faker.internet().emailAddress())
                         .password(faker.regexify("\\w{8,16}").toLowerCase())
                         .userName(faker.name().fullName())
+                        .termsAgree(true)
                         .build();
+        form.setConfirmPassword(form.getPassword());
         joinService.process(form);
 
         setData();
@@ -51,8 +53,8 @@ public class LoginServiceTest {
 
     void setData() {
 
-        setParam("email", faker.internet().emailAddress());
-        setParam("password", faker.regexify("\\w{8}").toLowerCase());
+        setParam("email", form.getEmail()); // 실제 가입한 데이터를 가지고 체크한다
+        setParam("password", form.getPassword());
     }
 
     //가짜 데이터를 만들수 있는 메서드 추가
@@ -103,6 +105,11 @@ public class LoginServiceTest {
     @DisplayName("이메일로 회원이 조회 되는지 검증, 검증 실패시 BadRequestException 발생")
     void memberExistTest() {
         // 회원가입을 시키고 회원 데이터를 조회해야하는 과정을 거쳐야함
+        setParam("email", "****" + form.getEmail()); // 예외 발생하도록 셋업
+
+        BadRequestException thrown = assertThrows(BadRequestException.class, () -> {
+            loginService.process(request);
+        });
     }
 
 }
