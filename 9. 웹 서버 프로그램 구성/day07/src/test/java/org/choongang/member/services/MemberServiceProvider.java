@@ -21,9 +21,12 @@ public class MemberServiceProvider {
         return instance;
     }
 
+    public SqlSession getSession() {
+        return DBConn.getSession();
+    }
+
     public MemberMapper memberMapper() {
-        SqlSession session = DBConn.getSession();
-        return session.getMapper(MemberMapper.class); // MemberMapper 구현 객체를 만들어준다
+        return getSession().getMapper(MemberMapper.class); // MemberMapper 구현 객체를 만들어준다
     }
 
     public JoinValidator joinValidator() {
@@ -41,6 +44,7 @@ public class MemberServiceProvider {
     }
 
     public LoginService loginService() {
-        return new LoginService(loginValidator()); // 생성과 동시에 반환
+        return new LoginService(loginValidator(), memberMapper()); // 생성과 동시에 반환
+        // memberMapper가 추가됨에 따라 주입해주면 바로 적용됨
     }
 }
