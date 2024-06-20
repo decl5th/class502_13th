@@ -34,4 +34,8 @@ public class MemberServiceProvider {
     public JoinService joinService() {
         return new JoinService(joinValidator(), memberMapper());
     }
+
+    public LoginService loginService() {
+        return new LoginService(); // 생성과 동시에 반환
+    }
 }
