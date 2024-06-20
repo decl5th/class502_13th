@@ -1,6 +1,6 @@
 <%@ page contentType="text/html; charset=UTF-8" %>
 <%@ taglib prefix="c" uri="jakarta.tags.core" %>
-<$@ taglib prefix="layout" tagdir="/WEB-INF/tags/layouts" %>
+<%@ taglib prefix="layout" tagdir="/WEB-INF/tags/layouts" %>
 <c:url var="actionUrl" value="/member/login" />
 <%----%>
 <layout:main title="로그인">

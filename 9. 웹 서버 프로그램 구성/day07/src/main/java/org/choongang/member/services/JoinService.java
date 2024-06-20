@@ -54,6 +54,7 @@ public class JoinService {
         RequestJoin form = RequestJoin.builder()
                 .email(request.getParameter("email"))
                 .password(request.getParameter("password"))
+                .confirmPassword(request.getParameter("confirmPassword"))
                 .userName(request.getParameter("userName"))
                 .termsAgree(termsAgree)
                 .build();
