@@ -25,7 +25,7 @@ public class LoginServiceTest {
     @DisplayName("로그인 성공시 예외가 발생하지 않음")
     void successTest() {
         assertDoesNotThrow(() -> {
-            LoginService loginService = new LoginService();
+            // LoginService loginService = new LoginService(); //위에서 객체 가져오기 때문에 객체 생성하는 로직 빼도 됨
             loginService.process();
         });
     }
