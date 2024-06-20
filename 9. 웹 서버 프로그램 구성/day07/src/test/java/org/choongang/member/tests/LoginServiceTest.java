@@ -2,11 +2,13 @@ package org.choongang.member.tests;
 
 import com.github.javafaker.Faker;
 import jakarta.servlet.http.HttpServletRequest;
+import org.apache.ibatis.session.SqlSession;
 import org.choongang.global.exceptions.BadRequestException;
 import org.choongang.member.controllers.RequestJoin;
 import org.choongang.member.services.JoinService;
 import org.choongang.member.services.LoginService;
 import org.choongang.member.services.MemberServiceProvider;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -30,6 +32,7 @@ public class LoginServiceTest {
     private Faker faker;
 
     private RequestJoin form;
+    private SqlSession dbsession; // rollback을 위함
 
     @BeforeEach
     void init() {
@@ -37,6 +40,7 @@ public class LoginServiceTest {
         JoinService joinService = MemberServiceProvider.getInstance().joinService();
 
         faker = new Faker(Locale.ENGLISH);
+        dbsession = MemberServiceProvider.getInstance().getSession(); // 환경변수에 따라서 달라지게 됨
 
         // 회원 가입 -> 가입한 회원 정보로 email, password 스텁 생성
         form = RequestJoin.builder()
@@ -110,6 +114,11 @@ public class LoginServiceTest {
         BadRequestException thrown = assertThrows(BadRequestException.class, () -> {
             loginService.process(request);
         });
+    }
+
+    @AfterEach
+    void destroy() {
+        dbsession.rollback();
     }
 
 }
