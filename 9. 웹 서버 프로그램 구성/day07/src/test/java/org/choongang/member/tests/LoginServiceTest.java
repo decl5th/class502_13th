@@ -122,7 +122,7 @@ public class LoginServiceTest {
     @Test
     @DisplayName("비밀번호 검증, 검증 실패시 BadRequestException 발생")
     void passwordCheckTest() {
-        setParam("password", "****" + form.getPassword());
+        setParam("password", "***" + form.getPassword());
         BadRequestException thrown = assertThrows(BadRequestException.class, () -> {
             loginService.process(request);
         });
