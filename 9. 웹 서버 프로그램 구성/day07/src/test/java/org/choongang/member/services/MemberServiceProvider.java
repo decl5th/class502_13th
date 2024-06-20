@@ -4,6 +4,7 @@ import org.apache.ibatis.session.SqlSession;
 import org.choongang.global.configs.DBConn;
 import org.choongang.member.mapper.MemberMapper;
 import org.choongang.member.validators.JoinValidator;
+import org.choongang.member.validators.LoginValidator;
 
 // 멤버 쪽 객체 조립기
 public class MemberServiceProvider {
@@ -35,7 +36,11 @@ public class MemberServiceProvider {
         return new JoinService(joinValidator(), memberMapper());
     }
 
+    public LoginValidator loginValidator() {
+        return new LoginValidator();
+    }
+
     public LoginService loginService() {
-        return new LoginService(); // 생성과 동시에 반환
+        return new LoginService(loginValidator()); // 생성과 동시에 반환
     }
 }
