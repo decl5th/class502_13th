@@ -16,6 +16,8 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
+import org.mockito.junit.jupiter.MockitoSettings;
+import org.mockito.quality.Strictness;
 
 import java.util.Locale;
 
@@ -23,6 +25,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.BDDMockito.*;
 
 @ExtendWith(MockitoExtension.class)
+@MockitoSettings(strictness = Strictness.LENIENT) // unnecessary stubbing exception에 대한 처리
 @DisplayName("로그인 기능 테스트")
 public class LoginServiceTest {
 
@@ -57,6 +60,8 @@ public class LoginServiceTest {
         joinService.process(form);
 
         setData();
+
+        given(request.getSession()).willReturn(session);
     }
 
     void setData() {
@@ -78,6 +83,9 @@ public class LoginServiceTest {
             // LoginService loginService = new LoginService(); //위에서 객체 가져오기 때문에 객체 생성하는 로직 빼도 됨
             loginService.process(request);
         });
+
+        // 로그인 처리 완료시 httpsession - setattribute 메서드가 호출 됨
+        then(session).should(only()).setAttribute(any(), any());
     }
 
     @Test
