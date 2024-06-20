@@ -2,6 +2,7 @@ package org.choongang.member.tests;
 
 import com.github.javafaker.Faker;
 import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpSession;
 import org.apache.ibatis.session.SqlSession;
 import org.choongang.global.exceptions.BadRequestException;
 import org.choongang.member.controllers.RequestJoin;
@@ -33,6 +34,9 @@ public class LoginServiceTest {
 
     private RequestJoin form;
     private SqlSession dbsession; // rollback을 위함
+
+    @Mock
+    private HttpSession session;
 
     @BeforeEach
     void init() {
