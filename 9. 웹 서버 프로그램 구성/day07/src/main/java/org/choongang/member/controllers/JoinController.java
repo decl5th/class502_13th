@@ -32,7 +32,7 @@ public class JoinController extends HttpServlet {
             resp.setContentType("text/html; charset=UTF-8");
             resp.setStatus(e.getStatus());
             PrintWriter out = resp.getWriter();
-            out.printf("<script>alert('%s');</script>", e.getMessage());
+            out.printf("<script>alert('%s'); history.back();</script>", e.getMessage()); // history.back()을 통해서 알람뜨고 나서 다시 가입화면으로 되돌아감
 
         }
     }
