@@ -7,21 +7,15 @@
     <h1>로그인</h1>
     <form method="POST" action="${actionUrl}" autocomplete="off">
         <dl>
-            <dt>email</dt>
+            <dt>이메일</dt>
             <dd>
                 <input type="text" name="email">
             </dd>
         </dl>
         <dl>
-            <dt>pw</dt>
+            <dt>비밀번호</dt>
             <dd>
                 <input type="password" name="password">
-            </dd>
-        </dl>
-        <dl>
-            <dt>email</dt>
-            <dd>
-                <input type="text" name="email">
             </dd>
         </dl>
         <div>
@@ -30,4 +24,4 @@
         </div>
         <button type="submit">로그인</button>
     </form>
-</layout:maim>
+</layout:main>
