@@ -4,6 +4,9 @@
 <c:url var="loginUrl" value="/member/login" />
 <c:url var="joinUrl" value="/member/join" />
 <c:url var="logoutUrl" value="/member/logout" />
+
+로그인 상태 : ${isLogin} <br>
+
 <%--
     pageContext.setAttribute("member", "..");
     request.setAttribute("member", "...");
@@ -18,7 +21,7 @@
 
 <%--null 값이 아니면 로그인 상태--%>
 <util:MemberOnly>
-    ${sessionScope.member.userName}(${sessionScope.member.email})님 로그인...
+    ${loggedMember.userName}(${loggedMember.email})님 로그인...
     <a href="${logoutUrl}">로그아웃</a>
 </util:MemberOnly>
 
