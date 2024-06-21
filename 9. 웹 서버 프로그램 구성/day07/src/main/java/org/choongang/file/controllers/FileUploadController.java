@@ -29,6 +29,7 @@ public class FileUploadController extends HttpServlet {
         // multipart 형식 body 데이터를 일반 양식과 파일 데이터로 분리해서 조회 가능한 ,list 형태로 변환
         List<DiskFileItem> items =  upload.parseRequest(req);
         for (DiskFileItem item : items) {
+
             if (item.isFormField()) { // 일반 텍스트 형태의 양식 데이터
                 // subject, content
                 String name = item.getFieldName();
