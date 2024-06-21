@@ -26,6 +26,7 @@ public class LoginService {
         String email = request.getParameter("email");
         Member member = mapper.get(email);
 
+        // 세션에 로그인 정보를 저장 그래서 세션에 member라는 값이 들어가면 로그인 상태 유지
         HttpSession session = request.getSession();
         session.setAttribute("member", member);
     }

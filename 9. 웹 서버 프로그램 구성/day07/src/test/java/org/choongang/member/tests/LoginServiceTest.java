@@ -41,6 +41,7 @@ public class LoginServiceTest {
     @Mock
     private HttpSession session;
 
+
     @BeforeEach
     void init() {
         loginService = MemberServiceProvider.getInstance().loginService();
@@ -49,15 +50,15 @@ public class LoginServiceTest {
         faker = new Faker(Locale.ENGLISH);
         dbsession = MemberServiceProvider.getInstance().getSession(); // 환경변수에 따라서 달라지게 됨
 
-        // 회원 가입 -> 가입한 회원 정보로 email, password 스텁 생성
-        form = RequestJoin.builder()
-                        .email(System.currentTimeMillis() + faker.internet().emailAddress())
-                        .password(faker.regexify("\\w{8,16}").toLowerCase())
-                        .userName(faker.name().fullName())
-                        .termsAgree(true)
-                        .build();
-        form.setConfirmPassword(form.getPassword());
-        joinService.process(form);
+            // 회원 가입 -> 가입한 회원 정보로 email, password 스텁 생성
+            form = RequestJoin.builder()
+                    .email(System.currentTimeMillis() + faker.internet().emailAddress())
+                    .password(faker.regexify("\\w{8,16}").toLowerCase())
+                    .userName(faker.name().fullName())
+                    .termsAgree(true)
+                    .build();
+            form.setConfirmPassword(form.getPassword());
+            joinService.process(form);
 
         setData();
 
@@ -79,6 +80,7 @@ public class LoginServiceTest {
     @Test
     @DisplayName("로그인 성공시 예외가 발생하지 않음")
     void successTest() {
+
         assertDoesNotThrow(() -> {
             // LoginService loginService = new LoginService(); //위에서 객체 가져오기 때문에 객체 생성하는 로직 빼도 됨
             loginService.process(request);
