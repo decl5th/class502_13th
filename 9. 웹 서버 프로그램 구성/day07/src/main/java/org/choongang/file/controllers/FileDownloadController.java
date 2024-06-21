@@ -25,6 +25,7 @@ public class FileDownloadController extends HttpServlet {
         resp.setContentLengthLong(file.length());
 
         // byte 형태로 오기 때문에 outputStream
+        // body 데이터가 파일로 출력되어 나감
         try (BufferedInputStream bis = new BufferedInputStream(new FileInputStream(file))){
             OutputStream out = resp.getOutputStream();
             out.write(bis.readAllBytes());
