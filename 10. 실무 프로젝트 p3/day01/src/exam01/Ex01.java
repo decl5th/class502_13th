@@ -25,7 +25,7 @@ public class Ex01 {
             }
             /*
             Object obj = arguments.isEmpty()
-                            ?constructor.newInstance()
+                            ? constructor.newInstance()
                             :
                             constructor.newInstance(arguments.toArray());
             */
