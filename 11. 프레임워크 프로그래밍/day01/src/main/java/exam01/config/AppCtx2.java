@@ -43,7 +43,7 @@ public class AppCtx2 {
 
         return infoService;
     }
-    @Bean
+    @Bean // 자바 jdk, 외부 라이브러리는 수동 등록이 필수
     public DateTimeFormatter dataTimeFormatter() {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy.MM.dd HH:mm");
         return formatter;
