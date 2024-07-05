@@ -17,6 +17,7 @@ import java.time.LocalDateTime;
 public class JoinService {
 
     //@Autowired
+    @NonNull
     private JoinValidator validator;
 
     //@Autowired
