@@ -1,13 +1,14 @@
 package member.dao;
 
 import member.entities.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-
+@Repository // DAO는 DB 접속과 주로 연결되다 보니 레포지토리 애너테이션을 붙여줌
 public class MemberDao { // memberDao - 빈 이름
 
     private static Map<String, Member> members = new HashMap<>();
