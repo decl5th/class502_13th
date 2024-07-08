@@ -16,7 +16,7 @@ import java.time.LocalDateTime;
 @RequiredArgsConstructor
 public class JoinService {
 
-    //@Autowired
+    //@Autowired -> 필요한 객체임을 알려줌, 스프링 컨테이너를 찾아서 의존성이 필요한 의존성 주입 DI역할
     @NonNull
     private JoinValidator validator;
 

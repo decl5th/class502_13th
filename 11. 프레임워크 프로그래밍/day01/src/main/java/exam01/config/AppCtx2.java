@@ -10,10 +10,10 @@ import org.springframework.context.annotation.Configuration;
 
 import java.time.format.DateTimeFormatter;
 
-@Configuration
+@Configuration // 관리할 객체가 뭔지 정해줄 수 있는 설정 클래스임을 알려주는 애너테이션
 public class AppCtx2 {
 
-    @Bean
+    @Bean // 스프링이 관리할 객체임을 알려주는 애너테이션
     @Qualifier("mDao")
     public MemberDao memberDao() {
         return new MemberDao();
