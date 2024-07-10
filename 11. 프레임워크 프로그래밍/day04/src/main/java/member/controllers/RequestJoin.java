@@ -9,5 +9,6 @@ public class RequestJoin {
     private String password;
     private String confirmPassword;
     private String userName;
+    private boolean agree;
 
 }
