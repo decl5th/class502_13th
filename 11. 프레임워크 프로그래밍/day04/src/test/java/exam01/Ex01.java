@@ -22,10 +22,8 @@ public class Ex01 {
 
     @Test
     void test1() {
-        // 이 때
-        int result = jdbcTemplate.update(new PreparedStatementCreator() {
-            @Override
-            public PreparedStatement createPreparedStatement(Connection con) throws SQLException {
+        // 이 때 PreparedStatementCreator는 함수형 인터페이스이기 때문에 람다식으로 줄여 쓰는게 가능하다
+        int result = jdbcTemplate.update(con -> {
                 String sql = "INSERT INTO MEMBER(SEQ, EMAIL, PASSWORD, USER_NAME) values(SEQ_MEMBER.NEXTVAL, ?,?,?)";
 
                 PreparedStatement pstmt = con.prepareStatement(sql);
@@ -34,7 +32,6 @@ public class Ex01 {
                 pstmt.setString(3, "user04");
 
                 return pstmt;
-            }
         });
 
         System.out.println("result = " + result);
