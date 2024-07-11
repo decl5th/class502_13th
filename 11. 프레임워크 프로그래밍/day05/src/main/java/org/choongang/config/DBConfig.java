@@ -24,5 +24,7 @@ public class DBConfig {
         ds.setMinEvictableIdleTimeMillis(1000 * 60); // 기본값이라 따로 추가 안해도 됨
         ds.setTimeBetweenEvictionRunsMillis(1000 * 5); // 기본값이라 따로 추가 안해도 됨
         /* 커넥션 풀 설정 D */
+
+        return ds;
     }
 }
