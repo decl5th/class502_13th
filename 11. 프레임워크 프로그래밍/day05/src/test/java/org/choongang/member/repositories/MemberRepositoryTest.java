@@ -5,8 +5,12 @@ import org.choongang.config.MvcConfig;
 import org.choongang.member.entities.Member;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.web.SpringJUnitWebConfig;
+
 
 import java.util.List;
 
@@ -51,13 +55,20 @@ public class MemberRepositoryTest {
 
     @Test
     void test5() {
-        List<Member> members = repository.findByUserNameContaining("user");
-        members.forEach(System.out::println);
+        Pageable pageable = PageRequest.of(0, 10);
+        Page<Member> members = repository.findByUserNameContaining("user", pageable);
+        //members.forEach(System.out::println);
     }
 
     @Test
     void test6() {
         List<Member> members = repository.findByUserNameContainingAndEmailContainingOrderByRegDtDesc("user", "test");
+        members.forEach(System.out::println);
+    }
+
+    @Test
+    void test7() {
+        List<Member> members = repository.getMembers("%user%", "%user%");
         members.forEach(System.out::println);
     }
 }
