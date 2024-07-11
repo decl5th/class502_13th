@@ -2,10 +2,9 @@
 <%@ taglib prefix="c" uri="jakarta.tags.core" %>
 <c:url var="actionUrl" value="/member/join" />
 
-
-
 <h1>회원 가입</h1>
-<h2>${message}</h2>
+
+<!--<h2>${message}</h2>-->
 <form method="POST" action="${actionUrl}" autocomplete="off">
     <dl>
         <dt>이메일</dt>

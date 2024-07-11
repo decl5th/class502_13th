@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-@RequestMapping()
+@RequestMapping("/member")
 public class MemberController {
-    /*
+
     @GetMapping("/join")
     //@RequestMapping(path="/member/join", method = {RequestMethod.GET, RequestMethod.POST})
     public String join() {
@@ -26,9 +26,9 @@ public class MemberController {
         return "redirect:/member/login";
     }
 
-     */
 
 
+    /*
     @GetMapping("/member/join")
     public ModelAndView join() {
 
@@ -38,6 +38,8 @@ public class MemberController {
 
         return mv;
     }
+
+     */
 
 
 }
