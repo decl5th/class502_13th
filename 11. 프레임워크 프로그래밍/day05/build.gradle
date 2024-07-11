@@ -14,6 +14,7 @@ repositories {
 }
 
 dependencies {
+    implementation 'org.mindrot:jbcrypt:0.4'
     implementation 'org.apache.tomcat:tomcat-jdbc:10.1.25'
 
     implementation "org.springframework:spring-webmvc:$springVersion"
