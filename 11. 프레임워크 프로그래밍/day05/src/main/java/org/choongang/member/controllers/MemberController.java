@@ -4,6 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -13,10 +14,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class MemberController {
 
     @GetMapping("/join")
-    public String join(Model model) {
+    public String join(@ModelAttribute RequestJoin form) {
         // spring은 model을 가지고 주로 속성을 설정
-        RequestJoin form = new RequestJoin();
-        model.addAttribute("requestJoin", form);
 
         return "member/join";
     }
