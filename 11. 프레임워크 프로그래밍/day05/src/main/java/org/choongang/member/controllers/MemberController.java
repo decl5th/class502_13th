@@ -13,6 +13,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/member")
 public class MemberController {
 
+    @ModelAttribute("commonValue") // 명시한 이름으로 속성값 부여
+    public String CommonValue() {
+        return "공통 속성값...";
+    }
+
     @GetMapping("/join")
     public String join(@ModelAttribute RequestJoin form) {
         // spring은 model을 가지고 주로 속성을 설정
