@@ -7,6 +7,7 @@ ${commonValue} <!-- 명시한 속성값 -->
 <h1>회원 가입</h1>
 
 <form:form method="POST" action="${actionUrl}" autocomplete="off" modelAttribute="requestJoin">
+    <form:hidden path="email" />
     <dl>
         <dt>이메일</dt>
         <dd>
