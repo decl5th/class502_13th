@@ -36,6 +36,12 @@ ${commonValue} <!-- 명시한 속성값 -->
         </dd>
     </dl>
     <dl>
+        <dt>취미</dt>
+        <dd>
+            <form:checkboxes path="hobby" items="${hobbies}" />
+        </dd>
+    </dl>
+    <dl>
         <dt>약관동의</dt>
         <dd>
             <!--
