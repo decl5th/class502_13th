@@ -38,6 +38,10 @@ ${commonValue} <!-- 명시한 속성값 -->
     <dl>
         <dt>취미</dt>
         <dd>
+            <!--
+            ${requestJoin.hobby[1]}
+            콜렉션에 들어간 값 조회
+            -->
             <form:checkboxes path="hobby" items="${hobbies}" />
         </dd>
     </dl>
