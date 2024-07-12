@@ -14,14 +14,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class MemberController {
 
     @GetMapping("/join")
-    public String join(@ModelAttribute RequestJoin form) {
+    public String join(@ModelAttribute("command") RequestJoin form) {
         // spring은 model을 가지고 주로 속성을 설정
 
         return "member/join";
     }
 
     @PostMapping("/join")
-    public String joinPs(RequestJoin form) {
+    public String joinPs(@ModelAttribute("command") RequestJoin form) {
 
         log.info(form.toString());
 
