@@ -1,17 +1,11 @@
 package org.choongang.member.controllers;
 
-import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.servlet.ModelAndView;
 
 @Slf4j
 @Controller
@@ -19,15 +13,26 @@ import org.springframework.web.servlet.ModelAndView;
 public class MemberController {
 
     @GetMapping("/join")
-    public String join() {
+    public String join(Model model) {
+
+        RequestJoin form = new RequestJoin();
+        model.addAttribute("requestJoin", form);
 
         return "member/join";
     }
 
     @PostMapping("/join")
-    public String join(RequestJoin form) {
+    public String joinPs(RequestJoin form) {
+
+        log.info(form.toString());
 
         return "member/join";
+    }
+
+    @GetMapping("/login")
+    public String login() {
+
+        return "member/login";
     }
 
    // private final Logger log = LoggerFactory.getLogger(MemberController.class); //자기 클래스 지정
