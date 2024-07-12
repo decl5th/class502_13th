@@ -14,7 +14,7 @@ public class MemberController {
 
     @GetMapping("/join")
     public String join(Model model) {
-
+        // spring은 model을 가지고 주로 속성을 설정
         RequestJoin form = new RequestJoin();
         model.addAttribute("requestJoin", form);
 

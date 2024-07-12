@@ -24,7 +24,7 @@
         <dt>비밀번호 확인</dt>
         <dd>
             <!--<input type="password" name="confirmPassword">-->
-            <form:password path="confirmpassword" />
+            <form:password path="confirmPassword" />
         </dd>
     </dl>
     <dl>
