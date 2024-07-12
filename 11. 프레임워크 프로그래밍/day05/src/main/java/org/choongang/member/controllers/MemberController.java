@@ -4,6 +4,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -33,9 +34,9 @@ public class MemberController {
         return "member/join";
     }
 
-    @PostMapping("/join")
+    @PostMapping(value = "/join", headers = "appkey=1234", consumes = MediaType.APPLICATION_JSON_VALUE)
     public String JoinPs(RequestJoin form) {
-
+        log.info("joinPs 실행...");
         return "redirect:/member/login";
     }
 
