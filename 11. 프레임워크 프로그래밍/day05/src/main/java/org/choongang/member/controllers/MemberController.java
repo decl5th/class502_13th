@@ -34,10 +34,15 @@ public class MemberController {
     }
 
     @GetMapping("/login")
-    public String login() {
+    public String login(RequestLogin2 form) {
 
+        if(form != null) {
+            log.info("이메일:{}, 비밀번호: {}", form.email(), form.password());
+        }
         return "member/login";
     }
+
+
 
    // private final Logger log = LoggerFactory.getLogger(MemberController.class); //자기 클래스 지정
     /*
