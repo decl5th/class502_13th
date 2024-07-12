@@ -1,6 +1,7 @@
 package org.choongang.member.controllers;
 
 import jakarta.servlet.http.HttpServletRequest;
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -11,23 +12,24 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+@Slf4j
 @Controller
 @RequestMapping("/member")
 public class MemberController {
 
-    private final Logger log = LoggerFactory.getLogger(MemberController.class);
+   // private final Logger log = LoggerFactory.getLogger(MemberController.class); //자기 클래스 지정
 
     @GetMapping("/join")
     //@RequestMapping(path = "/member/join", method = RequestMethod.GET)
     public String join1() {
-        System.out.println("mode 없음");
+        log.info("mode 없음");
         return "member/join";
     }
 
     @GetMapping(path = "/join", params = {"mode=join"})
     //@RequestMapping(path="/member/join", method = {RequestMethod.GET, RequestMethod.POST})
     public String join() {
-        System.out.println("mode=join");
+        log.info("mode=join");
         return "member/join";
     }
 
