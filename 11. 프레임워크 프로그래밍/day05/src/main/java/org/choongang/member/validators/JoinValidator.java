@@ -4,17 +4,29 @@ import lombok.RequiredArgsConstructor;
 
 import org.choongang.global.execeptions.BadRequestException;
 import org.choongang.global.validators.RequiredValidator;
-import org.choongang.global.validators.Validator;
 import org.choongang.member.controllers.RequestJoin;
 import org.choongang.member.mappers.MemberMapper;
 import org.springframework.stereotype.Component;
+import org.springframework.validation.Errors;
+import org.springframework.validation.Validator; // ⭐
 
 @Component
 @RequiredArgsConstructor
-public class JoinValidator implements Validator<RequestJoin>, RequiredValidator {
+public class JoinValidator implements Validator {
 
     private final MemberMapper mapper;
 
+    @Override
+    public boolean supports(Class<?> clazz) { // RequestJoin 커맨드 객체만 검증하도록 제한
+        return clazz.isAssignableFrom(RequestJoin.class);
+    }
+
+    @Override
+    public void validate(Object target, Errors errors) {
+
+    }
+
+    /**
     @Override
     public void check(RequestJoin form) {
         /**
@@ -22,7 +34,7 @@ public class JoinValidator implements Validator<RequestJoin>, RequiredValidator 
          * 2. 이메일 중복 여부(회원이 가입되어 있는지 체크)
          * 3. 비밀번호 자리수 체크(8자리)
          * 4. 비밀번호, 비밀번호 확인 일치 여부
-         */
+
         String email = form.getEmail();
         String password = form.getPassword();
         String confirmPassword = form.getConfirmPassword();
@@ -45,4 +57,5 @@ public class JoinValidator implements Validator<RequestJoin>, RequiredValidator 
         // 비번과 비번확인 일치 여부
         checkTrue(password.equals(confirmPassword), new BadRequestException("비밀번호가 일치하지 않습니다."));
     }
+    */
 }
