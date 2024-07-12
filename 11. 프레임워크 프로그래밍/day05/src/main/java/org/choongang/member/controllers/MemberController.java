@@ -18,8 +18,20 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping("/member")
 public class MemberController {
 
-   // private final Logger log = LoggerFactory.getLogger(MemberController.class); //자기 클래스 지정
+    @GetMapping("/join")
+    public String join() {
 
+        return "member/join";
+    }
+
+    @PostMapping("/join")
+    public String join(RequestJoin form) {
+
+        return "member/join";
+    }
+
+   // private final Logger log = LoggerFactory.getLogger(MemberController.class); //자기 클래스 지정
+    /*
     @GetMapping("/join")
     //@RequestMapping(path = "/member/join", method = RequestMethod.GET)
     public String join1() {
@@ -34,12 +46,13 @@ public class MemberController {
         return "member/join";
     }
 
-    @PostMapping(value = "/join", headers = "appkey=1234", consumes = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping(value = "/join", headers = "appkey=1234", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public String JoinPs(RequestJoin form) {
         log.info("joinPs 실행...");
-        return "redirect:/member/login";
+       // return "redirect:/member/login";
+        return "/member/login";
     }
-
+    */
 
 
     /*
