@@ -11,7 +11,7 @@ ${commonValue} <!-- 명시한 속성값 -->
         <dt>이메일</dt>
         <dd>
             <!--<input type="text" name="email" value="${requestJoin.email}">-->
-            <form:input path="email" />
+            <form:input type="email" path="email" />
         </dd>
     </dl>
     <dl>
