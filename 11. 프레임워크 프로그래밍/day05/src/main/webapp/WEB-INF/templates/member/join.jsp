@@ -7,12 +7,15 @@ ${commonValue} <!-- 명시한 속성값 -->
 <h1>회원 가입</h1>
 
 <form:form method="POST" action="${actionUrl}" autocomplete="off" modelAttribute="requestJoin">
-    <form:hidden path="email" />
+
     <dl>
         <dt>이메일</dt>
         <dd>
-            <!--<input type="text" name="email" value="${requestJoin.email}">-->
+            <form:input path="email" cssClass="input-txt" cssStyle="border-color: red;"/>
+            <%--
+            <input type="text" name="email" value="${requestJoin.email}">
             <form:input type="email" path="email" />
+            --%>
         </dd>
     </dl>
     <dl>
@@ -39,11 +42,21 @@ ${commonValue} <!-- 명시한 속성값 -->
     <dl>
         <dt>취미</dt>
         <dd>
-            <!--
+            <form:radiobuttons path="hobby" items="${hobbies2}" itemLabel="code" itemValue="value" />
+                <%--
+                <form:select path="hobby">
+                    <option value=''>- 선택하세요 -</option>
+                    <form:option value="hobby0" label="취미0" />
+                    <form:options items="${hobbies2}" itemLabel="code" itemValue="value"/>
+                </form:select>
+                
+            <form:select path="hobby" items="${hobbies}" />
+
             ${requestJoin.hobby[1]}
             콜렉션에 들어간 값 조회
-            -->
+
             <form:checkboxes path="hobby" items="${hobbies}" />
+            --%>
         </dd>
     </dl>
     <dl>
