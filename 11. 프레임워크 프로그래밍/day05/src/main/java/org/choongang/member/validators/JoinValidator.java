@@ -46,6 +46,8 @@ public class JoinValidator implements Validator {
         if (!agree) {
             errors.rejectValue("agree", "Required", "회원 가입 약관에 동의하세요.");
         }
+            // 2. 이메일 중복 여부(회원이 가입되어 있는지 체크)
+
         /*
         if (!StringUtils.hasText(email)) {
             errors.rejectValue("email", "Required", "이메일을 입력하세요.");

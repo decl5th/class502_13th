@@ -14,7 +14,7 @@
         </dt>
         <dd>
             <form:input path="email"/>
-            <form:errors path="email" delimiter="" />
+            <form:errors path="email"/>
         </dd>
     </dl>
     <dl>
