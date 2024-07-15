@@ -2,6 +2,7 @@ package org.choongang.member.controllers;
 
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import org.choongang.member.services.JoinService;
 import org.choongang.member.validators.JoinValidator;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.Errors;
@@ -13,7 +14,8 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 public class MemberController {
 
-    //private final JoinValidator joinValidator;
+    private final JoinValidator joinValidator;
+    private final JoinService joinService;
 
     @GetMapping("/join")
     public String join(@ModelAttribute RequestJoin form) {
@@ -24,18 +26,23 @@ public class MemberController {
     @PostMapping("/join")
     public String joinPs(@Valid RequestJoin form, Errors errors) { // @Valid ⭐⭐
         // 회원 가입 데이터 검증
-        // joinValidator.validate(form, errors);
+        joinValidator.validate(form, errors);
 
         if (errors.hasErrors()) { // reject, rejectValue가 한번이라도 호출되면 true
             return "member/join";
         }
 
+        joinService.process(form); // 회원 가입 처리
+
         return "redirect:/member/join";
     }
-
+    /*
     @InitBinder
     public void initBinder(WebDataBinder binder){
+        binder.setValidator(joinValidator);
 
     }
+
+     */
 
 }
