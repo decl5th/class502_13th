@@ -53,7 +53,7 @@ public class MemberController {
     }
      */
     @GetMapping("/login")
-    public String login(@ModelAttribute RequestLogin form, @SessionAttribute("member") Member member) {
+    public String login(@ModelAttribute RequestLogin form, @SessionAttribute(name = "member", required = false) Member member) {
         // Member member = (Member) session.getAttribute("member");
         if(member != null){
             log.info(member.toString());
@@ -77,6 +77,13 @@ public class MemberController {
         loginService.process(email);
 
         return "redirect:/";
+    }
+
+    @RequestMapping("/logout")
+    public String logout(HttpSession session){
+        session.invalidate(); // 세션 비우기
+
+        return "redirect:/member/login";
     }
 
 }
