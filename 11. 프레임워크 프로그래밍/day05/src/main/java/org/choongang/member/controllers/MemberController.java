@@ -5,6 +5,7 @@ import lombok.RequiredArgsConstructor;
 import org.choongang.member.services.JoinService;
 import org.choongang.member.services.LoginService;
 import org.choongang.member.validators.JoinValidator;
+import org.choongang.member.validators.LoginValidator;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.Errors;
 import org.springframework.web.bind.WebDataBinder;
@@ -18,6 +19,7 @@ public class MemberController {
     private final JoinValidator joinValidator;
     private final JoinService joinService;
     private final LoginService loginService;
+    private final LoginValidator loginValidator;
 
     @GetMapping("/join")
     public String join(@ModelAttribute RequestJoin form) {
@@ -54,6 +56,7 @@ public class MemberController {
 
     @PostMapping("/login")
     public String loginPs(@Valid RequestLogin form, Errors errors) {
+        loginValidator.validate(form, errors);
 
         loginService.process(form);
 
