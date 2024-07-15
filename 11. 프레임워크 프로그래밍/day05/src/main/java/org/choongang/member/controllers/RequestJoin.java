@@ -1,11 +1,33 @@
 package org.choongang.member.controllers;
 
+import jakarta.validation.constraints.AssertTrue;
+import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
 
 import java.util.List;
 
 @Data
 public class RequestJoin {
+
+    @NotBlank
+    private String email;
+
+    @NotBlank
+    private String password;
+
+    @NotBlank
+    private String confirmPassword;
+
+    @NotBlank
+    private String userName;
+
+    @AssertTrue
+    private boolean agree;
+
+}
+
+/*
+* public class RequestJoin {
 
     private String email;
     private String password;
@@ -17,5 +39,4 @@ public class RequestJoin {
     private String hobby;
     private boolean agree;
     private Address addr;
-
-}
+*/
