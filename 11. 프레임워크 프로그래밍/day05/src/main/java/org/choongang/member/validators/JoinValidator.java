@@ -8,7 +8,7 @@ import org.choongang.member.controllers.RequestJoin;
 import org.choongang.member.mappers.MemberMapper;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.Errors;
-import org.springframework.validation.Validator; // ⭐
+import org.springframework.validation.Validator; // ⭐⭐
 
 @Component
 @RequiredArgsConstructor
