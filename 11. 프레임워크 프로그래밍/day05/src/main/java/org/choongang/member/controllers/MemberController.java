@@ -38,7 +38,7 @@ public class MemberController {
 
         joinService.process(form); // 회원 가입 처리
 
-        return "redirect:/member/join";
+        return "redirect:/member/login";
     }
     /*
     @InitBinder
