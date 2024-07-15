@@ -11,8 +11,8 @@ import java.util.List;
 @Data
 public class RequestJoin {
 
-    @NotBlank(message="이메일을 입력하세요.")
-    @Email(message="이메일 형식이 아닙니다.")
+    @NotBlank
+    @Email
     private String email;
 
     @NotBlank
