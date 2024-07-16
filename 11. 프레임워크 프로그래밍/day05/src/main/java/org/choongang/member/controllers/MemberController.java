@@ -4,6 +4,7 @@ import jakarta.servlet.http.HttpSession;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.choongang.global.execeptions.BadRequestException;
 import org.choongang.member.entities.Member;
 import org.choongang.member.services.JoinService;
 import org.choongang.member.services.LoginService;
@@ -95,6 +96,11 @@ public class MemberController {
     public String list(@Valid @ModelAttribute MemberSearch search, Errors errors) {
 
         log.info(search.toString());
+
+        boolean result = false;
+        if (!result) {
+            throw new BadRequestException("예외 발생!!!");
+        }
 
         return "member/list";
     }
