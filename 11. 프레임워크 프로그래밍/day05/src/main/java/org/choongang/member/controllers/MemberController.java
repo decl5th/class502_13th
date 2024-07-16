@@ -99,4 +99,9 @@ public class MemberController {
         return "member/list";
     }
 
+    @GetMapping("/info/{id}")
+    public String info(@PathVariable("id") String email) {
+
+    }
+
 }
