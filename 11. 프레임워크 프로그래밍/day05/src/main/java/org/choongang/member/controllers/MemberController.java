@@ -114,7 +114,7 @@ public class MemberController {
 
         log.info("email:{}, email2:{}", email, email2);
     }
-
+/*
     @ExceptionHandler(Exception.class)
     public String errorHandler(Exception e, HttpServletRequest request, HttpServletResponse response, Model model) {
 
@@ -122,5 +122,6 @@ public class MemberController {
         log.info("MemberController에서 유입");
         return "error/common";
     }
+ */
 
 }
