@@ -6,7 +6,8 @@
 <h1>step2</h1>
 
 <form:form method="post" action="${actionUrl}" autocomplete="off" modelAttribute="requestSurvey">
-    질문1 : <form:input path="q3" /><br>
-    질문2 : <form:input path="q4" /><br>
+
+    질문3 : <form:input path="q3" /><br>
+    질문4 : <form:input path="q4" /><br>
     <button type="submit">제출하기</button>
 </form:form>
