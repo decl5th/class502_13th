@@ -99,9 +99,11 @@ public class MemberController {
         return "member/list";
     }
 
-    @GetMapping("/info/{id}")
-    public String info(@PathVariable("id") String email) {
+    @ResponseBody
+    @GetMapping("/info/{id}/{id2}")
+    public void info(@PathVariable("id") String email, @PathVariable("id2") String email2) {
 
+        log.info("email:{}, email2:{}", email, email2);
     }
 
 }
