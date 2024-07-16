@@ -91,4 +91,12 @@ public class MemberController {
         return "redirect:/member/login";
     }
 
+    @GetMapping("/list")
+    public String list(@Valid @ModelAttribute MemberSearch search, Errors errors) {
+
+        log.info(search.toString());
+
+        return "member/list";
+    }
+
 }
