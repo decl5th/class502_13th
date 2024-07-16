@@ -1,17 +1,15 @@
 package org.choongang.config;
 
-import lombok.RequiredArgsConstructor;
-import org.choongang.member.validators.JoinValidator;
+
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
-import org.springframework.validation.Validator;
 import org.springframework.web.servlet.config.annotation.*;
 
 @Configuration
 @EnableWebMvc
 @ComponentScan("org.choongang")
-@Import({DBConfig.class, MessageConfig.class})
+@Import({DBConfig.class, MessageConfig.class, InterceptorConfig.class})
 //@RequiredArgsConstructor
 public class MvcConfig implements WebMvcConfigurer/*⭐⭐*/ {
 
@@ -35,8 +33,8 @@ public class MvcConfig implements WebMvcConfigurer/*⭐⭐*/ {
        registry.addViewController("/")
                .setViewName("main/index");
 
-       registry.addViewController("/sidepage/")
-               .setViewName("sidepage/index");
+       registry.addViewController("/mypage")
+               .setViewName("mypage/index");
     }
 
     @Override

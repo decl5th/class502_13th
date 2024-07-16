@@ -53,7 +53,7 @@ public class MemberController {
     }
      */
     @GetMapping("/login")
-    public String login(@ModelAttribute RequestLogin form, @CookieValue(name = "savedEmail", required = false) String saveEmail/*@SessionAttribute(name = "member", required = false) Member member*/) {
+    public String login(@ModelAttribute RequestLogin form, @CookieValue(name ="savedEmail", required = false) String saveEmail/*@SessionAttribute(name = "member", required = false) Member member*/) {
         // Member member = (Member) session.getAttribute("member");
         /*
         if(member != null){
