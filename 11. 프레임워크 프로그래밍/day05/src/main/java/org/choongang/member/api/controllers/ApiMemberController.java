@@ -43,7 +43,7 @@ public class ApiMemberController {
     }
 
     @GetMapping("/list")
-    public List<Member> list() {
+    public ResponseEntity<List<Member>> list() {
        List<Member> members = IntStream.rangeClosed(1, 10)
                .mapToObj(i -> Member.builder()
                        .email("user" + i + "@test.org")
@@ -52,7 +52,7 @@ public class ApiMemberController {
                        .regDt(LocalDateTime.now())
                        .build())
                .toList();
-       return members;
+       return ResponseEntity.status(HttpStatus.OK).body(members); // 상태코드와 출력 데이터를 반환값에 넣어놓음
     }
 
     @GetMapping(path="/test", produces = "text/html;charset=UTF-8")
