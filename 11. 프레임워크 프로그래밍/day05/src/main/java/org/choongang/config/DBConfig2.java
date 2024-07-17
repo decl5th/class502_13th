@@ -18,11 +18,11 @@ import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Slf4j
-@Configuration
+//@Configuration
 public class DBConfig2 {
 
     @Profile("!prod") // prod 파일이 아닌 경우
-    @Configuration
+    //@Configuration
     @EnableTransactionManagement
     @MapperScan("org.choongang")
     @EnableJdbcRepositories("org.choongang")
@@ -77,7 +77,7 @@ public class DBConfig2 {
     }
 
     @Profile("prod")
-    @Configuration
+    //@Configuration
     @EnableTransactionManagement
     @MapperScan("org.choongang")
     @EnableJdbcRepositories("org.choongang")
