@@ -40,7 +40,7 @@ public class SurveyController {
 
         status.setComplete(); // requestSurvey 세션 비우기 - magic form
 
-        System.out.println("세션 비우기 후 : " + request.getAttribute("requestSurvey"));
+        System.out.println("세션 비우기 후 : " + request.getSession().getAttribute("requestSurvey"));
 
         return "survey/step3";
     }
