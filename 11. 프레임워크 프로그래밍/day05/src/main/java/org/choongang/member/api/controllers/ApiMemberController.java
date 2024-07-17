@@ -6,7 +6,9 @@ import org.choongang.member.controllers.RequestJoin;
 import org.choongang.member.entities.Member;
 import org.choongang.member.mappers.MemberMapper;
 import org.choongang.member.services.JoinService;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
@@ -24,9 +26,12 @@ public class ApiMemberController {
     private final JoinService joinService;
 
     @PostMapping// POST /api/member
-    public void join(@RequestBody RequestJoin form) {
+    public ResponseEntity join(@RequestBody RequestJoin form) {
         // Content-Type: application/json
         joinService.process(form);
+
+        // 응답코드 201, 출력 바디 X
+        return ResponseEntity.status(HttpStatus.CREATED).build();
     }
 
     @GetMapping("/info/{email}")
