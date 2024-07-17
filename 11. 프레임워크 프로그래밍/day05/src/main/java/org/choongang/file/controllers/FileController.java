@@ -28,7 +28,7 @@ public class FileController {
         String name = file.getOriginalFilename();
         log.info("파일명 : {}", name);
 
-        File uploadPath = new File("D:/uploads/" + name);
+        File uploadPath = new File(uplooadDir + name);
 
         try {
             file.transferTo(uploadPath);

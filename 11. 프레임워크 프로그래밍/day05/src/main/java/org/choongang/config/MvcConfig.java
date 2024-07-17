@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.core.io.ClassPathResource;
+import org.springframework.util.StringUtils;
 import org.springframework.web.servlet.config.annotation.*;
 
 @Configuration
@@ -52,9 +53,21 @@ public class MvcConfig implements WebMvcConfigurer/*⭐⭐*/ {
 
     @Bean // 설정 파일이라 static으로 정의
     public static PropertySourcesPlaceholderConfigurer propertyConfigurer(){
-        PropertySourcesPlaceholderConfigurer conf = new PropertySourcesPlaceholderConfigurer();
-        conf.setLocations(new ClassPathResource("application.properties"));
+       String fileName = "application";
+       String profile = System.getenv("spring.profiles.active");
+       fileName += StringUtils.hasText(profile) ? "-" + profile :"";
 
+        /**
+         * spring.profiles.active=dev
+         * -> application-dev
+         *
+         * spring.profiles.active=prod
+         * -> application-prod
+         */
+
+        PropertySourcesPlaceholderConfigurer conf = new PropertySourcesPlaceholderConfigurer();
+        conf.setLocations(new ClassPathResource(fileName + ".properties"));
+        System.out.println(fileName);
         return conf;
     }
 }

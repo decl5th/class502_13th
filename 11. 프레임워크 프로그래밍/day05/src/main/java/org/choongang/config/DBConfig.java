@@ -27,8 +27,8 @@ public class DBConfig extends AbstractJdbcConfiguration {
         /* 연결 설정 B */
         ds.setDriverClassName("oracle.jdbc.driver.OracleDriver");
         ds.setUrl("jdbc:oracle:thin:@localhost:1521:XE");
-        ds.setUsername("Spring");
-        ds.setPassword("oracle");
+        ds.setUsername(System.getenv("db.username"));
+        ds.setPassword(System.getenv("db.password"));
         /* 연결 설정 D */
 
         /* 커넥션 풀 설정 B */
