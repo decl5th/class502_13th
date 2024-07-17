@@ -6,6 +6,7 @@ import org.choongang.member.controllers.RequestJoin;
 import org.choongang.member.entities.Member;
 import org.choongang.member.mappers.MemberMapper;
 import org.choongang.member.services.JoinService;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -52,7 +53,13 @@ public class ApiMemberController {
                        .regDt(LocalDateTime.now())
                        .build())
                .toList();
-       return ResponseEntity.status(HttpStatus.OK).body(members); // 상태코드와 출력 데이터를 반환값에 넣어놓음
+
+        HttpHeaders headers = new HttpHeaders(); // 헤더
+        headers.add("t1", "v1");
+        headers.add("t2", "v2");
+
+       //return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(members); // 상태코드와 출력 데이터를 반환값에 넣어놓음
+        return new ResponseEntity<>(members, headers, HttpStatus.OK);
     }
 
     @GetMapping(path="/test", produces = "text/html;charset=UTF-8")
