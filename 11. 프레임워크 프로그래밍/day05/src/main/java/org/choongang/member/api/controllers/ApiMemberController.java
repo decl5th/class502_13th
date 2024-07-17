@@ -2,13 +2,12 @@ package org.choongang.member.api.controllers;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.choongang.member.controllers.RequestJoin;
 import org.choongang.member.entities.Member;
 import org.choongang.member.mappers.MemberMapper;
+import org.choongang.member.services.JoinService;
 import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -22,6 +21,12 @@ public class ApiMemberController {
     // 회원 이메일 조회 후 출력
 
     private final MemberMapper mapper;
+    private final JoinService joinService;
+
+    @PostMapping// POST /api/member
+    public void join(RequestJoin form) {
+        log.info(form.toString());
+    }
 
     @GetMapping("/info/{email}")
     public Member info(@PathVariable("email") String email) {

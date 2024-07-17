@@ -18,6 +18,10 @@ import org.springframework.validation.Errors;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDateTime;
+import java.util.List;
+import java.util.stream.IntStream;
+
 @Slf4j
 @Controller
 @RequestMapping("/member")
@@ -113,6 +117,21 @@ public class MemberController {
     public void info(@PathVariable("id") String email, @PathVariable(name="id2", required = false) String email2) {
 
         log.info("email:{}, email2:{}", email, email2);
+    }
+
+    @ResponseBody // rest방식으로 일반 controller에서 사용하기 위한 애너테이션
+    // ex) json형태, 문자열 그대로, void에서 body데이터없이 출력 가능
+    @GetMapping("/list2")
+    public List<Member> list() {
+        List<Member> members = IntStream.rangeClosed(1, 10)
+                .mapToObj(i -> Member.builder()
+                        .email("user" + i + "@test.org")
+                        .password("12345678")
+                        .userName("user" + i)
+                        .regDt(LocalDateTime.now())
+                        .build())
+                .toList();
+        return members;
     }
 /*
     @ExceptionHandler(Exception.class)
