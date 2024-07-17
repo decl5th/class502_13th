@@ -24,8 +24,9 @@ public class ApiMemberController {
     private final JoinService joinService;
 
     @PostMapping// POST /api/member
-    public void join(RequestJoin form) {
-        log.info(form.toString());
+    public void join(@RequestBody RequestJoin form) {
+        // Content-Type: application/json
+        joinService.process(form);
     }
 
     @GetMapping("/info/{email}")
