@@ -35,7 +35,8 @@ public class ApiMemberController {
     public ResponseEntity join(@Valid @RequestBody RequestJoin form, Errors errors) {
         // Content-Type: application/json
         if(errors.hasErrors()) {
-            return ResponseEntity.badRequest().build();
+
+
         }
 
         boolean result = false;
