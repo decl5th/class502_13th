@@ -23,7 +23,7 @@ import java.util.List;
 @Configuration
 @EnableWebMvc
 @ComponentScan("org.choongang")
-@Import({DBConfig.class, MessageConfig.class, InterceptorConfig.class, FileConfig.class})
+//@Import({DBConfig.class, MessageConfig.class, InterceptorConfig.class, FileConfig.class})
 //@RequiredArgsConstructor
 public class MvcConfig implements WebMvcConfigurer/*⭐⭐*/ {
 
@@ -56,10 +56,13 @@ public class MvcConfig implements WebMvcConfigurer/*⭐⭐*/ {
         configurer.enable();
     }
 
+    /*
     @Override
     public void configureViewResolvers(ViewResolverRegistry registry) {
         registry.jsp("/WEB-INF/templates/", ".jsp");
     }
+
+     */
 
     @Bean // 설정 파일이라 static으로 정의
     public static PropertySourcesPlaceholderConfigurer propertyConfigurer(){
