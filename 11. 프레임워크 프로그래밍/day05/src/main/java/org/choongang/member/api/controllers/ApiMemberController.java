@@ -2,6 +2,7 @@ package org.choongang.member.api.controllers;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.choongang.global.rests.JSONData;
 import org.choongang.member.controllers.RequestJoin;
 import org.choongang.member.entities.Member;
 import org.choongang.member.mappers.MemberMapper;
@@ -36,15 +37,15 @@ public class ApiMemberController {
     }
 
     @GetMapping("/info/{email}")
-    public Member info(@PathVariable("email") String email) {
+    public JSONData info(@PathVariable("email") String email) {
         // Content-Type: application/json
         Member member = mapper.get(email);
 
-        return member;
+        return new JSONData(member);
     }
 
     @GetMapping("/list")
-    public ResponseEntity<List<Member>> list() {
+    public ResponseEntity<JSONData> list() {
        List<Member> members = IntStream.rangeClosed(1, 10)
                .mapToObj(i -> Member.builder()
                        .email("user" + i + "@test.org")
@@ -59,7 +60,7 @@ public class ApiMemberController {
         headers.add("t2", "v2");
 
        //return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(members); // 상태코드와 출력 데이터를 반환값에 넣어놓음
-        return new ResponseEntity<>(members, headers, HttpStatus.OK);
+        return new ResponseEntity<>(new JSONData(members), headers, HttpStatus.OK);
     }
 
     @GetMapping(path="/test", produces = "text/html;charset=UTF-8")
