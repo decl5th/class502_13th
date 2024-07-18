@@ -3,6 +3,7 @@ package org.choongang.member.api.controllers;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.choongang.global.Utils;
 import org.choongang.global.execeptions.BadRequestException;
 import org.choongang.global.execeptions.CommonException;
 import org.choongang.global.rests.JSONData;
@@ -30,12 +31,13 @@ public class ApiMemberController {
 
     private final MemberMapper mapper;
     private final JoinService joinService;
+    private final Utils utils;
 
     @PostMapping// POST /api/member
     public ResponseEntity join(@Valid @RequestBody RequestJoin form, Errors errors) {
         // Content-Type: application/json
         if(errors.hasErrors()) {
-
+            throw new BadRequestException(utils.getErrorMessages(errors));
 
         }
 
