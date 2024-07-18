@@ -1,8 +1,16 @@
 package tests;
 
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.choongang.config.MvcConfig;
 import org.choongang.exam.PostData;
+import org.choongang.member.controllers.RequestJoin;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.web.SpringJUnitWebConfig;
 import org.springframework.web.client.RestTemplate;
@@ -14,6 +22,10 @@ import java.util.List;
 @SpringJUnitWebConfig
 @ContextConfiguration(classes= MvcConfig.class)
 public class Ex01 {
+
+    @Autowired
+    private ObjectMapper om; // 수동 등록 빈
+
     @Test
     void test1() {
         URI url = UriComponentsBuilder.fromUriString("https://www.naver.com")
@@ -35,5 +47,44 @@ public class Ex01 {
         RestTemplate restTemplate = new RestTemplate();
         PostData data = restTemplate.getForObject("https://jsonplaceholder.typicode.com/posts/1", PostData.class);
         System.out.println(data);
+    }
+
+    @Test
+    void test3() throws Exception {
+        RestTemplate restTemplate = new RestTemplate();
+       String body= restTemplate.getForObject("https://jsonplaceholder.typicode.com/posts/1", String.class);
+
+       // 단일 객체 반환
+        PostData data = om.readValue(body, PostData.class);
+        System.out.println(data);
+
+        // 복합 데이터 객체 변환 - List, Set, Map ..
+        String itemsBody = restTemplate.getForObject("https://jsonplaceholder.typicode.com/posts", String.class);
+
+        List<PostData> items = om.readValue(itemsBody, new TypeReference<>() {});
+        items.forEach(System.out::println);
+    }
+
+    @Test
+    void test4() throws Exception {
+        RestTemplate restTemplate = new RestTemplate();
+
+        RequestJoin form = new RequestJoin();
+        form.setEmail("user1004@test.org");
+        form.setPassword("12345678");
+        form.setConfirmPassword("12345678");
+        form.setUserName("user1004");
+        form.setAgree(true);
+
+        // objectmapper를 통해 JSON로 변환
+        String params = om.writeValueAsString(form);
+
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.APPLICATION_JSON);
+
+        HttpEntity<String> request = new HttpEntity<>(params, headers);
+        String url = "http://localhost:3000/day05/api/member";
+        ResponseEntity<String> response = restTemplate.postForEntity(url, request, String.class);
+        System.out.println("response = " + response);
     }
 }
