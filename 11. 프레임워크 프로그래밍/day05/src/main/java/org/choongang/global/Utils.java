@@ -47,7 +47,14 @@ public class Utils {
         ms.setUseCodeAsDefaultMessage(false);
 
         List<String> messages = Arrays.stream(codes)
-                .map(c -> messageSource.getMessage(c, null, request.getLocale()))
+                .map(c -> {
+                    try {
+                       return ms.getMessage(c, null, request.getLocale());
+
+                    } catch (Exception e) {
+                        return "";
+                    }
+                })
                 .filter(s -> s != null && !s.isBlank())
                 .toList();
 
