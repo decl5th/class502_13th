@@ -10,11 +10,17 @@
         <tr>
             <th>순번</th>
             <th>이메일</th>
-            <th>비밀번호</th>
             <th>회원명</th>
+            <th>가입일시</th>
         </tr>
         <tr th:each="item, status : ${items}" th:object="${item}">
-            <td th:text="${status.count}"></td>
+            <td>
+                순번:[[${status.count}]]
+                / 첫번째 : [[${status.first}]]
+                / 마지막 : [[${status.last}]]
+                / 짝수 : [[${status.even}]]
+                / 홀수 : [[${status.odd}]]
+            </td>
             <td th:text="*{email}"></td>
             <td th:text="*{userName}"></td>
             <td th:text="*{regDt}"></td>
