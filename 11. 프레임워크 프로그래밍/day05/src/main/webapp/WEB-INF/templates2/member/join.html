@@ -8,9 +8,9 @@
     <h1>회원가입</h1>
     <form method="post" autocomplete="off">
         <dl>
-            <dt>이메일</dt>
+            <dt th:text="#{이메일10}">이메일</dt>
             <dd>
-                <input type="text" name="email" value="user01@test.org">
+                <input type="text" name="email" th:value="${requestJoin.email}" value="user01@test.org">
             </dd>
         </dl>
         <dl>
@@ -35,6 +35,7 @@
             <input type="checkbox" name="agree" value="true" id="agree">
             <label for="agree">회원가입 약관에 동의합니다.</label>
         </div>
+        <button type="submit">가입하기</button>
     </form>
 </body>
 </html>
