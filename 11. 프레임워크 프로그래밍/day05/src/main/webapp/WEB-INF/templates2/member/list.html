@@ -12,10 +12,10 @@
             <th>비밀번호</th>
             <th>회원명</th>
         </tr>
-        <tr th:each="item : ${items}">
-            <td th:text="${item.email}"></td>
-            <td th:text="${item.userName}"></td>
-            <td th:text="${item.regDt}"></td>
+        <tr th:each="item : ${items}" th:object="${item}">
+            <td th:text="*{email}"></td>
+            <td th:text="*{userName}"></td>
+            <td th:text="*{regDt}"></td>
         </tr>
         </thead>
     </table>
