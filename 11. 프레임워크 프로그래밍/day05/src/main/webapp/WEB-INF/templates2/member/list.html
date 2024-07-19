@@ -6,7 +6,7 @@
 </head>
 <body>
     <h1>회원 정보</h1>
-    <div th:object="${member}">
+    <th:block th:object="${member}">
     <dl>
         <dt th:text="#{이메일}">이메일</dt>
         <!--<dd th:text="${member.email}">user01...</dd>-->
@@ -23,6 +23,6 @@
         <dd th:text="*{regDt}">2022.11.11...</dd>
 
     </dl>
-    </div>
+    </th:block>
 </body>
 </html>
