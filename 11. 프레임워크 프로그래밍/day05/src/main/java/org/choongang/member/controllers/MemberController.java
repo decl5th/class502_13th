@@ -98,7 +98,7 @@ public class MemberController {
 
         return "redirect:/member/login";
     }
-
+    /*
     @GetMapping("/list")
     public String list(@Valid @ModelAttribute MemberSearch search, Errors errors) {
 
@@ -108,6 +108,22 @@ public class MemberController {
         if (!result) {
             throw new BadRequestException("예외 발생!!!");
         }
+
+        return "member/list";
+    }
+     */
+
+    @GetMapping("/list")
+    public String list2(Model model) {
+
+        Member member = Member.builder()
+                .email("user01@test.org")
+                .password("12345678")
+                .userName("사용자01")
+                .regDt(LocalDateTime.now())
+                .build();
+
+        model.addAttribute("member", member);
 
         return "member/list";
     }
