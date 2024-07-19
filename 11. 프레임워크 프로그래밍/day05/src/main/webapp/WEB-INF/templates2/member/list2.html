@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>회원 정보 출력</title>
+</head>
+<body>
+    <h1>회원 정보</h1>
+    <th:block th:object="${member}">
+    <dl>
+        <dt th:text="#{이메일}">이메일</dt>
+        <!--<dd th:text="${member.email}">user01...</dd>-->
+        <dd th:text="*{email}">user01...</dd>
+    </dl>
+    <dl>
+        <dt th:text="#{회원명}">회원명</dt>
+        <!--<dd th:text="${member.userName}">111</dd>-->
+        <dd th:utext="*{userName}">111</dd>
+    </dl>
+    <dl>
+        <dt th:text="#{가입일시}">가입일시</dt>
+        <!--<dd th:text="${regDt}">2022.11.11...</dd>-->
+        <dd th:text="*{regDt}">2022.11.11...</dd>
+
+    </dl>
+
+        <a th:href="@{/member/login}" th:text="#{로그인}"></a>
+        <br>
+        <!-- /day05/member/login?p1=user01...&p2=user01 -->
+        <a th:href="@{/member/login(p1=*{email}, p2=*{userName})}" th:text="#{로그인}"></a>
+        <a th:href="@{/member/login(p1=${member.email}, p2=${member.userName})}" th:text="#{로그인}"></a>
+        <a th:href="@{/member/info/{email}/{email2}(email=*{email}, email2=*{userName})}"></a>
+    </th:block>
+</body>
+</html>
