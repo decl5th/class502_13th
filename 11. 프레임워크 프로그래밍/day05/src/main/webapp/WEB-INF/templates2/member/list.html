@@ -18,8 +18,8 @@
                 순번:[[${s.count}]]
                 / 첫번째 : [[${s.first}]]
                 / 마지막 : [[${s.last}]]
-                / 짝수 : [[${s.even}]]
-                / 홀수 : [[${s.odd}]]
+                <th:block th:if="${s.even}">짝수</th:block>
+                <th:block th:if="${s.odd}">홀수</th:block>
             </td>
             <td th:text="*{email}"></td>
             <td th:text="*{userName}"></td>
