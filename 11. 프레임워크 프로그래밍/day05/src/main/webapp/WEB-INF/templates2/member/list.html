@@ -23,8 +23,11 @@
         <dd th:text="*{regDt}">2022.11.11...</dd>
 
     </dl>
-    </th:block>
 
-    <a th:href="@{/member/login}" th:text="#{로그인}"></a>
+        <a th:href="@{/member/login}" th:text="#{로그인}"></a>
+        <br>
+        <!-- /day05/member/login?p1=user01...&p2=user01 -->
+        <a th:href="@{/member/login(p1=*{email}, p2=*{userName})}" th:text="#{로그인}"></a>
+    </th:block>
 </body>
 </html>
