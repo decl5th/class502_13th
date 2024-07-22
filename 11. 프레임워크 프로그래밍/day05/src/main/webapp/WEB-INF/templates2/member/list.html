@@ -1,6 +1,10 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
-    <body>
+<html xmlns:th="http://www.thymeleaf.org"
+    xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+    layout:decorate="~{layouts/main}">
+
+    <main layout:fragment="content">
+
         <table border="1">
         <thead>
             <tr>
@@ -48,5 +52,5 @@
                 <div th:text="${num}"></div>
             </div>
             <div th:text="${@utils.toUpper('abc')}"></div>
-    </body>
+    </main>
 </html>
