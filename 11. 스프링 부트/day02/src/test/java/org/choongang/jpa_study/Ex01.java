@@ -3,6 +3,7 @@ package org.choongang.jpa_study;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
+import jakarta.persistence.PersistenceContext;
 import org.choongang.member.entities.Member;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,16 +22,17 @@ public class Ex01 {
     private EntityManagerFactory emf;
      */
 
-    @Autowired
+    //@Autowired
+    @PersistenceContext // 의존성 주입 가능
     private EntityManager em;
 
     @Test
     void test1() {
         //EntityManager em = emf.createEntityManager(); // 이미 빈으로 만들어져 있다
 
-        EntityTransaction tx = em.getTransaction();
+        //EntityTransaction tx = em.getTransaction();
 
-        tx.begin(); // Transaction 시작 ㄷ
+        //tx.begin(); // Transaction 시작 -> transactional 애너테이션 추가로 주석 처리
         Member member = new Member();
         member.setSeq(1L);
         member.setEmail("user01@test.org");
@@ -49,9 +51,11 @@ public class Ex01 {
 
         em.flush();
 
-        em.remove(member); // 제거 상태, 제거 X, 상태만...
+        em.merge(member); // 분리된 영속 상태 -> 영속 상태 (변화 감지 상태)
+
+        // em.remove(member); // 제거 상태, 제거 X, 상태만...
         em.flush();
 
-        tx.commit();
+        //tx.commit();
     }
 }
