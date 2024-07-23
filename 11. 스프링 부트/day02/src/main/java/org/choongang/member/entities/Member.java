@@ -9,8 +9,8 @@ import java.time.LocalDateTime;
 @Data
 @Entity
 public class Member {
-    @Id // 필수, seq쪽에
-    private long seq;
+    @Id
+    private Long seq;
     private String email;
     private String password;
     private String userName;

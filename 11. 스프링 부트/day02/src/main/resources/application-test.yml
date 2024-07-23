@@ -1,7 +1,7 @@
 spring:
-  # 데이터베이스 설정 들여쓰기 제거 후 작성 시작
+  # 데이터베이스 설정
   datasource:
-    driver-class-name: org.h2.Driver
+    driverClassName: org.h2.Driver
     url: jdbc:h2:mem:test
     username: sa
     password:
@@ -9,11 +9,12 @@ spring:
   # JPA 설정
   jpa:
     properties:
-      show-sql: true # 실행하는 SQL을 콘솔에 출력
-      format_sql: true # 실행되는 sql의 들여쓰기 및 줄 개행
+      show_sql: true # 실행하는 SQL을 콘솔에 출력
+      format_sql: true # 실행되는 SQL의 들여쓰기 및 줄 개행
       use_sql_comments: true
     hibernate:
-      ddl-auto: create
+      ddlAuto: create
+
 
 # 로거 설정
 logging:
