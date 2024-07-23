@@ -11,41 +11,34 @@ import org.springframework.transaction.annotation.Transactional;
 import java.time.LocalDateTime;
 
 @SpringBootTest
-@Transactional // 테스트 이후 DB가 rollback 됨
-//@TestPropertySource(locations = "classpath:application.properties") // 직접 설정 파일 명시
-public class Ex03 {
-
-
+@Transactional
+@TestPropertySource(properties = "spring.profiles.active=test")
+public class Ex04 {
 
     @PersistenceContext
     private EntityManager em;
 
     @Test
-    void test1() {
+    void test1() throws Exception {
         Member member = new Member();
-        // member.setSeq(1L);
         member.setEmail("user01@test.org");
         member.setPassword("12345678");
         member.setUserName("사용자01");
-        member.setCreatedAt(LocalDateTime.now());
 
         em.persist(member);
-
-        Member member2 = new Member();
-        member2.setEmail("user02@test.org");
-        member2.setPassword("12345678");
-        member2.setUserName("사용자02");
-        member2.setCreatedAt(LocalDateTime.now());
-
-        em.persist(member2);
         em.flush();
 
         em.clear();
 
-        Member _member1 = em.find(Member.class, member.getSeq());
-        System.out.println(_member1);
+        Member _member = em.find(Member.class, member.getSeq());
+        System.out.println(member);
 
-        Member _member2 = em.find(Member.class, member2.getSeq());
-        System.out.println(_member2);
+        Thread.sleep(5000);
+        member.setUserName("(수정)사용자01");
+        em.flush();
+        em.clear();
+
+        member = em.find(Member.class, member.getSeq());
+        System.out.println(member);
     }
 }

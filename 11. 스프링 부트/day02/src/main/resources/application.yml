@@ -19,7 +19,7 @@ spring:
         use_sql_comments: true
         #dialect: org.hibernate.dialect.OracleDialect
     hibernate:
-      ddlAuto: update #테이블을 drop하지 않고 유지, create는 테이블을 drop하고 새로 생성
+      ddlAuto: create #테이블을 drop하지 않고 유지, create는 테이블을 drop하고 새로 생성
 
 
 # 로거 설정
