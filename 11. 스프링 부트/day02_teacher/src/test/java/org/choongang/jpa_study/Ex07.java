@@ -1,15 +1,15 @@
 package org.choongang.jpa_study;
 
+import com.querydsl.core.BooleanBuilder;
+import com.querydsl.core.types.dsl.BooleanExpression;
 import org.choongang.member.constants.Authority;
 import org.choongang.member.entities.Member;
+import org.choongang.member.entities.QMember;
 import org.choongang.member.repositories.MemberRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
 import org.springframework.test.context.TestPropertySource;
 
 import java.util.List;
@@ -17,7 +17,7 @@ import java.util.stream.IntStream;
 
 @SpringBootTest
 @TestPropertySource(properties = "spring.profiles.active=test")
-public class Ex06 {
+public class Ex07 {
 
     @Autowired
     private MemberRepository memberRepository;
@@ -30,7 +30,7 @@ public class Ex06 {
                         .email("user" + i + "@test.org")
                         .password("12345678")
                         .userName("사용자" + i)
-                        .authority(Authority.USER)
+                        .authority(i % 2 == 0 ? Authority.USER : Authority.ADMIN)
                         .build()).toList();
 
         memberRepository.saveAllAndFlush(members);
@@ -38,31 +38,32 @@ public class Ex06 {
 
     @Test
     void test1() {
-        Member member = memberRepository.findByEmail("user2@test.org");
-        System.out.println(member);
+        QMember member = QMember.member;
+        BooleanExpression c1 = member.userName.contains("용");
+
+        List<Member> members = (List<Member>) memberRepository.findAll(c1);
+        members.forEach(System.out::println);
     }
 
     @Test
     void test2() {
-        List<Member> members = memberRepository.findByEmailContainingAndUserNameContainingOrderByCreatedAtDesc("ser", "용");
+        String key = "용";
+        QMember member = QMember.member;
+        BooleanBuilder andBuilder = new BooleanBuilder();
+        BooleanBuilder orBuilder = new BooleanBuilder();
+        orBuilder.or(member.email.contains(key))
+                .or(member.userName.contains(key));
 
+        andBuilder.and(orBuilder);
+        List<Member> members = (List<Member>) memberRepository.findAll(andBuilder);
         members.forEach(System.out::println);
     }
 
     @Test
     void test3() {
-        Pageable pageable = PageRequest.of(0, 10);
-        Page<Member> data = memberRepository.findByEmailContaining("ser", pageable);
-
-        List<Member> items = data.getContent(); // 조회된 데이터
-        long total = data.getTotalElements();
-        System.out.printf("총 갯수 : %d%n", total);
-        items.forEach(System.out::println);
-
-    }
-
-    @Test
-    void test4() {
-        List<Member> members = memberRepository.getMembers("%ser", "%용%");
+        QMember member = QMember.member;
+        BooleanExpression c1 = member.email.concat(member.userName).contains("용");
+        List<Member> members = (List<Member>) memberRepository.findAll(c1);
+        members.forEach(System.out::println);
     }
 }
