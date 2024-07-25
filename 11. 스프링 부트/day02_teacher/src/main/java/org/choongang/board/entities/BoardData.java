@@ -8,8 +8,8 @@ import lombok.NoArgsConstructor;
 import org.choongang.global.entities.BaseEntity;
 import org.choongang.member.entities.Member;
 
-@Data
 @Builder
+@Data
 @Entity
 @NoArgsConstructor @AllArgsConstructor
 public class BoardData extends BaseEntity {
@@ -25,5 +25,5 @@ public class BoardData extends BaseEntity {
     private String subject;
 
     @Lob
-    private String contents;
+    private String content;
 }

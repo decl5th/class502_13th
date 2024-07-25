@@ -24,7 +24,7 @@ public class QBoardData extends EntityPathBase<BoardData> {
 
     public final org.choongang.global.entities.QBaseEntity _super = new org.choongang.global.entities.QBaseEntity(this);
 
-    public final StringPath contents = createString("contents");
+    public final StringPath content = createString("content");
 
     //inherited
     public final DateTimePath<java.time.LocalDateTime> createdAt = _super.createdAt;

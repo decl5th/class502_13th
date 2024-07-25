@@ -1,15 +1,15 @@
 package org.choongang.member.entities;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
+import org.choongang.board.entities.BoardData;
 import org.choongang.global.entities.BaseEntity;
 import org.choongang.member.constants.Authority;
 
-@Builder
+import java.util.List;
+
 @Data
+@Builder
 @Entity
 @NoArgsConstructor @AllArgsConstructor
 //@Table(name="CH_MEMBER") // 테이블 이름이 클래스명과 다른 경우
@@ -31,11 +31,15 @@ public class Member extends BaseEntity {
     @Column(length=40, nullable = false, name="name")
     private String userName;
 
-   // @Lob
+    // @Lob
     @Transient
     private String introduction;
 
     @Column(length=10)
     @Enumerated(EnumType.STRING)
     private Authority authority;
+
+    @ToString.Exclude // ToString 추가 배제
+    @OneToMany(mappedBy = "member")
+    private List<BoardData> items;
 }
