@@ -71,4 +71,9 @@ public class Ex12 {
     void test2() {
         List<BoardData> items = boardDataRepository.getAllList(); // JPQL 직접 정의
     }
+
+    @Test
+    void test3() {
+        List<BoardData> items = boardDataRepository.findBySubjectContaining("제목");
+    }
 }
