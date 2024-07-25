@@ -1,5 +1,7 @@
 package org.choongang.jpa_study;
 
+import com.querydsl.core.Tuple;
+import com.querydsl.core.types.Projections;
 import com.querydsl.jpa.impl.JPAQuery;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 import jakarta.persistence.EntityManager;
@@ -24,12 +26,14 @@ import java.util.stream.IntStream;
 @ActiveProfiles("test")
 @Transactional
 public class Ex12 {
-
     @Autowired
     private MemberRepository memberRepository;
 
     @Autowired
     private BoardDataRepository boardDataRepository;
+
+    @Autowired
+    private JPAQueryFactory queryFactory;
 
     @PersistenceContext
     private EntityManager em;
@@ -55,7 +59,6 @@ public class Ex12 {
 
         boardDataRepository.saveAllAndFlush(items);
         em.clear();
-
     }
 
     @Test
@@ -72,7 +75,7 @@ public class Ex12 {
 
     @Test
     void test2() {
-        List<BoardData> items = boardDataRepository.getAllList(); // JPQL 직접 정의
+        List<BoardData> items = boardDataRepository.getAllList();
     }
 
     @Test
@@ -84,13 +87,31 @@ public class Ex12 {
     void test4() {
         QBoardData boardData = QBoardData.boardData;
 
-        JPAQueryFactory factory = new JPAQueryFactory(em);
-        JPAQuery<BoardData> query = factory.selectFrom(boardData)
+        //JPAQueryFactory factory = new JPAQueryFactory(em);
+        JPAQuery<BoardData> query = queryFactory
+                .selectFrom(boardData)
                 .leftJoin(boardData.member)
                 .fetchJoin();
 
         List<BoardData> items = query.fetch();
         //items.forEach(System.out::println);
+    }
 
+    @Test
+    void test5() {
+        QBoardData boardData = QBoardData.boardData;
+        JPAQuery<Tuple> query = queryFactory.select(boardData.subject, boardData.content).from(boardData);
+        List<Tuple> items = query.fetch();
+        for (Tuple item : items) {
+            String subject = item.get(boardData.subject);
+            String content = item.get(boardData.content);
+            System.out.printf("subject=%s, content=%s%n", subject, content);
+        }
+    }
+
+    void test6() {
+        QBoardData boardData = QBoardData.boardData;
+        JPAQuery<Long> query = queryFactory.select(boardData.seq.sum())
+                .from(boardData);
     }
 }
