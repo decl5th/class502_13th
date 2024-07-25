@@ -8,6 +8,8 @@ import lombok.NoArgsConstructor;
 import org.choongang.global.entities.BaseEntity;
 import org.choongang.member.entities.Member;
 
+import java.util.List;
+
 @Builder
 @Data
 @Entity
@@ -26,4 +28,7 @@ public class BoardData extends BaseEntity {
 
     @Lob
     private String content;
+
+    @ManyToMany
+    private List<HashTag> tags;
 }
