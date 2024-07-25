@@ -19,7 +19,7 @@ public class BoardData extends BaseEntity {
     @Id @GeneratedValue
     private Long seq;
 
-    @ManyToOne // member_seq - entity명_기본키 속성명
+    @ManyToOne(fetch = FetchType.LAZY ) // member_seq - entity명_기본키 속성명
     @JoinColumn(name = "mSeq")
     private Member member;
 

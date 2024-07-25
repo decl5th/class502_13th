@@ -10,12 +10,15 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.stream.IntStream;
 
 @SpringBootTest
-// @Transactional
+@Transactional
+@ActiveProfiles("test")
 public class Ex11 {
 
     @Autowired
@@ -45,10 +48,22 @@ public class Ex11 {
                         .build())
                 .toList(); // 게시글 1개에 태그 5개 할당 총 5개 게시글 생성
         boardDataRepository.saveAllAndFlush(items);
+
+        em.clear();
     }
 
     @Test
     void test1() {
+        BoardData item = boardDataRepository.findById(1L).orElse(null);
+        List<HashTag> tags = item.getTags();
+        tags.forEach(System.out::println);
 
+    }
+
+    @Test
+    void test2() {
+        HashTag tag = hashTagRepository.findById("태그2").orElse(null);
+        List<BoardData> items = tag.getItems();
+        items.forEach(System.out::println);
     }
 }
