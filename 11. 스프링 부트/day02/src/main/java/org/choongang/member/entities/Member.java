@@ -20,7 +20,10 @@ import java.time.LocalDateTime;
 public class Member extends BaseEntity {
     @Id/* @GeneratedValue(strategy = GenerationType.AUTO) */ @GeneratedValue
     private Long seq;
+
+    @Column(unique = true) // unique = true 제약조건 부여
     private String email;
+
     private String password;
 
     @Column(name = "name")
