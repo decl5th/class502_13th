@@ -16,7 +16,7 @@ public class HashTag {
     @Id
     private String tag;
 
-    @ToString.Exclude
-    @ManyToMany(mappedBy = "tags")
-    private List<BoardData> items;
+    //@ToString.Exclude
+    //@ManyToMany(mappedBy = "tags")
+    //private List<BoardData> items;
 }
