@@ -44,6 +44,6 @@ public class Member extends BaseEntity {
     private MemberProfile profile;
 
     @ToString.Exclude // ToString 추가 배제
-    @OneToMany(mappedBy = "member", cascade = CascadeType.REMOVE)
+    @OneToMany(mappedBy = "member", cascade = {CascadeType.REMOVE, CascadeType.PERSIST}, orphanRemoval = true) // 제약조건 cascade on delete는 아니다
     private List<BoardData> items;
 }
