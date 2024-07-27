@@ -1,13 +1,15 @@
 package org.choongang.board.entities;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.IdClass;
+import jakarta.persistence.*;
 import lombok.Data;
 
 @Data
 @Entity
+public class BoardView {
+    @EmbeddedId
+    private BoardViewId id;
+}
+/*
 @IdClass(BoardViewId.class)
 public class BoardView {
     // view 카운트를 정할 수 있는 Entity
@@ -22,3 +24,4 @@ public class BoardView {
 
     //@Id들을 묶어주는 ID클래스 생성 필요
 }
+*/
