@@ -21,18 +21,20 @@ public class Member extends BaseEntity {
     @Id/* @GeneratedValue(strategy = GenerationType.AUTO) */ @GeneratedValue
     private Long seq;
 
-    @Column(unique = true) // unique = true 제약조건 부여
+    @Column(length = 60, nullable = false, unique = true) // unique = true 제약조건 부여
     private String email;
 
+    @Column(length = 65, nullable = false)
     private String password;
 
-    @Column(name = "name")
+    @Column(length = 40, nullable = false, name = "name")
     private String userName;
 
     //@Lob
     @Transient // 매핑 무시
     private String introduction;
 
+    @Column(length = 10)
     @Enumerated(EnumType.STRING)
     private Authority authority;
 
