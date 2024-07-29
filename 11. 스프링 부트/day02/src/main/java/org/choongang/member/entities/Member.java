@@ -1,7 +1,10 @@
 package org.choongang.member.entities;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.choongang.global.entities.BaseEntity;
 import org.choongang.member.constants.Authority;
 import org.hibernate.annotations.CreationTimestamp;
@@ -9,8 +12,10 @@ import org.hibernate.annotations.UpdateTimestamp;
 
 import java.time.LocalDateTime;
 
+@Builder
 @Data
 @Entity
+@NoArgsConstructor @AllArgsConstructor
 //@Table(name = "CH_MEMBER") // 테이블 이름이 클래스명과 다른 경우
 /*
 @Table(indexes = {
