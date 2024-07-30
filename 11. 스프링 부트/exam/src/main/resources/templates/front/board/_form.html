@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <th:block th:fragment="form" th:object="${requestBoard}">
+        <dl>
+            <dt>제목</dt>
+            <dd>
+                <input type="text" name="title" th:field="*{title}">
+                <div class="error" th:each="err : ${#fields.errors('title')}" th:text="${err}"></div>
+            </dd>
+        </dl>
+        <dl>
+            <dt>내용</dt>
+            <dd>
+                <textarea name="textContent" rows="4" cols="50" th:field="*{textContent}"></textarea>
+                <div class="error" th:each="err : ${#fields.errors('textContent')}" th:text="${err}"></div>
+            </dd>
+        </dl>
+        <dl>
+            <dt>작성자</dt>
+            <dd>
+                <input type="text" name="writer" th:field="*{writer}">
+                <div class="error" th:each="err : ${#fields.errors('writer')}" th:text="${err}"></div>
+            </dd>
+        </dl>
+    </th:block>
+</html>
