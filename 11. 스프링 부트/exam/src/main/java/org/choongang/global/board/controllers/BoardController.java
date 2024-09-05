@@ -27,12 +27,13 @@ public class BoardController {
         return "front/board/write";
     }
 
-    @PostMapping(path={"/write", "/update", "/view"})
-    public String writePs(@Valid RequestBoard form, Errors errors) {
-        String mode = form.getSeq() == null ? "update" : "writer";
+    @PostMapping(path={"/write", "/update"})
+    public String writePs(@Valid RequestBoard form, Errors errors, Model model) {
+        String mode = form.getSeq() == null ? "write" : "update";
 
 
         if (errors.hasErrors()) {
+            model.addAttribute(("requestBoard"), form);
             return "front/board/" + mode;
         }
 
